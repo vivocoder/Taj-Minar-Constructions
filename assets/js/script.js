@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ${p.tags.map(t => `<span class="ptag">${t}</span>`).join('')}
           </div>
           <div style="margin-top:1rem;">
-            <a href="https://wa.me/923001234567?text=Assalamu%20Alaikum!%20I%20like%20${encodeURIComponent(p.name)}"
+            <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20like%20${encodeURIComponent(p.name)}"
                target="_blank" class="btn-primary">
                Enquire
             </a>
