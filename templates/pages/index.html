@@ -4,713 +4,784 @@
 
 {% block content %}
 
-  <!-- 1. HERO -->
-  <section id="hero">
-    <div class="hbg">
-      <img src="https://img.avianexperiences.com/attractions/5daa9e15-e7a0-40b2-80a5-bd30d4ea57ea"
-        alt="Grand Mosque at dawn" loading="eager">
-    </div>
-    <div class="hc">
-      <div class="hey">Crafting Sacred Spaces Since 2005</div>
-      <h1 class="ht">Builders of<br><em>Divine</em> Architecture</h1>
-      <p class="hd">We specialize in constructing majestic Minars, ornate Domes, and complete sacred structures —
-        blending timeless Islamic heritage with modern engineering excellence.</p>
-      <div class="ha">
-        <a href="{{ url_for('projects') }}" class="btn-primary">View Our Portfolio</a>
-        <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
-          target="_blank" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.45);">Free
-          Consultation</a>
-      </div>
-      <div class="hs">
-        <div class="hsi"><span class="hsn">150+</span><span class="hsl">Projects Done</span></div>
-        <div class="hsi"><span class="hsn">20+</span><span class="hsl">Years Exp.</span></div>
-        <div class="hsi"><span class="hsn">12</span><span class="hsl">Cities Served</span></div>
-        <div class="hsi"><span class="hsn">100%</span><span class="hsl">Satisfaction</span></div>
-      </div>
-    </div>
-    <div class="hscroll">
-      <div class="hscroll-line"></div>
-    </div>
-  </section>
-
-
-
-  <!-- 3. ABOUT PREVIEW -->
-  <section id="about">
-    <div class="si">
-      <div class="ag">
-        <div class="aic">
-          <img src="{{ url_for('static', filename='images/islamic images masjid.jpeg') }}" alt="Mosque dome craftsmanship" class="aim"
-            loading="lazy">
-          <img src="{{ url_for('static', filename='images/mindar details.jpeg') }}" alt="Minar detail" class="aif" loading="lazy">
-          <div class="ab"><span class="abn">20+</span><span class="abt">Years of<br>Excellence</span></div>
-        </div>
-        <div>
-          <div class="sl">Who We Are</div>
-          <h2 class="st">Masters of <em>Islamic</em> Architecture</h2>
-          <img src="https://img.avianexperiences.com/trek/4dbf731b-a451-4de7-b78d-75eff5c6ad6d" alt="Ottoman"
-            class="st-image">
-          <div class="apt">
-            <div class="ap">
-              <div class="api"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2.5" stroke-linecap="round">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg></div>
-              <div class="apt2"><strong>Expert Craftsmen & Engineers</strong><span>Traditional artisans + modern
-                  structural engineers for flawless results.</span></div>
-            </div>
-            <div class="ap">
-              <div class="api"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2.5" stroke-linecap="round">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg></div>
-              <div class="apt2"><strong>Premium Quality Materials</strong><span>Finest marbles, stones, and metals
-                  befitting sacred structures.</span></div>
-            </div>
-            <div class="ap">
-              <div class="api"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2.5" stroke-linecap="round">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg></div>
-              <div class="apt2"><strong>Customized Islamic Designs</strong><span>Every project uniquely designed —
-                  Mughal, Ottoman, Andalusian styles.</span></div>
-            </div>
-          </div>
-          <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
-            <a href="{{ url_for('services') }}" class="btn-primary">Our Services</a>
-            <a href="https://wa.me/919997868686" target="_blank" class="btn-outline">WhatsApp Us</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 4. SERVICES -->
-  <section id="services" style="padding:6rem 2rem;background:var(--cream);">
-    <div class="si">
-      <div style="text-align:center;margin-bottom:3.5rem;">
-        <div class="sl c">What We Build</div>
-        <h2 class="st" style="text-align:center;">Our Specialized <em>Services</em></h2>
-        <p class="sd" style="text-align:center;max-width:540px;margin:0 auto;">From single Minars to complete mosque
-          complexes — every component built with masterful precision.</p>
-      </div>
-      <div class="sg">
-        <div class="sc">
-          <div class="sciw"><img src="{{ url_for('static', filename='images/minar construction.jpeg') }}" alt="Minar" class="sci" loading="lazy">
-          </div>
-          <div class="scb">
-            <div class="scn">01</div>
-            <div class="sct">Minar Construction</div>
-            <div class="scd">Octagonal, cylindrical, tapered or fluted minars with ornate balconies, geometric bands,
-              and crescent finials. Heights 20ft–200ft.</div>
-            <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
-              target="_blank" class="btn-outline">Contact
-              Now <i class="ri-arrow-right-circle-line"></i> </a>
-          </div>
-
-        </div>
-        <div class="sc">
-          <div class="sciw"><img src="{{ url_for('static', filename='images/Dome Fabrication.jpeg') }}" alt="Dome" class="sci" loading="lazy"
-              style="object-position: top;"></div>
-          <div class="scb">
-            <div class="scn">02</div>
-            <div class="sct">Dome Fabrication</div>
-            <div class="scd">Onion domes to ribbed Ottoman and Persian domes — in RCC, steel or fiberglass, finished
-              with mosaic tiles, copper or marble cladding.</div>
-            <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
-              target="_blank" class="btn-outline">Contact
-              Now <i class="ri-arrow-right-circle-line"></i> </a>
-          </div>
-        </div>
-        <div class="sc">
-          <div class="sciw"><img src="{{ url_for('static', filename='images/Mosque Constructio.jpeg') }}" alt="Mosque" class="sci" loading="lazy">
-          </div>
-          <div class="scb">
-            <div class="scn">03</div>
-            <div class="sct">Mosque Construction</div>
-            <div class="scd">Complete mosque construction from architectural design to calligraphic details. Prayer
-              halls, wudu areas, minarets, and domes included.</div>
-            <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
-              target="_blank" class="btn-outline">Contact
-              Now <i class="ri-arrow-right-circle-line"></i> </a>
-          </div>
-        </div>
-        <div class="sc">
-          <div class="sciw"><img src="{{ url_for('static', filename='images/Madarsa Buildings.webp') }}" alt="Madarsa" class="sci" loading="lazy">
-          </div>
-          <div class="scb">
-            <div class="scn">04</div>
-            <div class="sct">Madarsa Buildings</div>
-            <div class="scd">Purpose-built Islamic educational institutions with traditional arched corridors, central
-              courtyards, study halls, and residential blocks.</div>
-            <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
-              target="_blank" class="btn-outline">Contact
-              Now <i class="ri-arrow-right-circle-line"></i> </a>
-          </div>
-        </div>
-        <div class="sc">
-          <div class="sciw"><img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=600&q=80"
-              alt="Restoration" class="sci" loading="lazy"></div>
-          <div class="scb">
-            <div class="scn">05</div>
-            <div class="sct">Renovation & Restoration</div>
-            <div class="scd">Breathing new life into heritage mosques — structural restoration, dome repair, minar
-              reinforcement, calligraphy revival and upgrades.</div>
-            <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
-              target="_blank" class="btn-outline">Contact
-              Now <i class="ri-arrow-right-circle-line"></i> </a>
-          </div>
-        </div>
-        <div class="sc">
-          <div class="sciw"><img src="{{ url_for('static', filename='images/Islamic Ornamentation.jpeg') }}" alt="Ornamentation" class="sci"
-              loading="lazy"></div>
-          <div class="scb">
-            <div class="scn">06</div>
-            <div class="sct">Islamic Ornamentation</div>
-            <div class="scd">Geometric Arabesques, Muqarnas, Zellij tile mosaic, calligraphic panels, jali screens, and
-              hand-carved plasterwork — art in every surface.</div>
-            <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
-              target="_blank" class="btn-outline">Contact
-              Now <i class="ri-arrow-right-circle-line"></i> </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- style="text-align:center;margin-bottom:3.5rem;" -->
-
-  <!-- 5. PROJECTS PREVIEW -->
-  <section id="pp" style="background:var(--dark);padding:6rem 2rem;">
-    <div class="si">
-      <div class="pph">
-        <div>
-          <div class="sl" style="color:var(--gold-light);">Our Portfolio</div>
-          <h2 class="st" style="color:var(--ivory);">Featured <em style="color:var(--gold-light);">Projects</em></h2>
-        </div>
-        <a href="{{ url_for('projects') }}" class="btn-outline"
-          style="color:var(--gold-light);border-color:var(--gold-light);white-space:nowrap;">View All →</a>
-      </div>
-      <div class="pmg">
-        <div class="pt tall">
-          <img src="{{ url_for('static', filename='images/masjid 1.jpeg') }}" alt="Masjid Al-Noor Lahore" loading="lazy">
-          <div class="pov"></div>
-          <div class="pin">
-            <div class="pc">Grand Mosque · 2023</div>
-            <div class="pn">Masjid Al-Noor — Lahore</div>
-            <div class="pl">4 Minars · Dome 65ft</div>
-          </div>
-        </div>
-        <div class="pt">
-          <img src="{{ url_for('static', filename='images/masjid 2.jpeg') }}" alt="Twin Minars" loading="lazy">
-          <div class="pov"></div>
-          <div class="pin">
-            <div class="pc">Minar · 2022</div>
-            <div class="pn">Twin Minars — Faisalabad</div>
-          </div>
-        </div>
-        <div class="pt">
-          <img src="{{ url_for('static', filename='images/masjid 3.jpeg') }}" alt="Grand Dome" loading="lazy">
-          <div class="pov"></div>
-          <div class="pin">
-            <div class="pc">Dome · 2022</div>
-            <div class="pn">Grand Dome — Rawalpindi</div>
-          </div>
-        </div>
-        <div class="pt">
-          <img src="{{ url_for('static', filename='images/masjid 4.jpeg') }}" alt="Jamia Islamia" loading="lazy">
-          <div class="pov"></div>
-          <div class="pin">
-            <div class="pc">Madarsa · 2022</div>
-            <div class="pn">Jamia Islamia — Karachi</div>
-          </div>
-        </div>
-        <div class="pt">
-          <img src="{{ url_for('static', filename='images/masjid 5.jpeg') }}" alt="Heritage Mosque" loading="lazy">
-          <div class="pov"></div>
-          <div class="pin">
-            <div class="pc">Restoration · 2023</div>
-            <div class="pn">Heritage Mosque — Multan</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6. SCROLLING GALLERY -->
-  <section id="gs">
-    <div class="gstrip">
-      <img src="{{ url_for('static', filename='images/masjid 1.jpeg') }}" alt="mosque" loading="lazy">
-      <img src="{{ url_for('static', filename='images/masjid 2.jpeg') }}" alt="minar" loading="lazy">
-      <img src="{{ url_for('static', filename='images/masjid 3.jpeg') }}" alt="dome" loading="lazy">
-      <img src="{{ url_for('static', filename='images/masjid 4.jpeg') }}" alt="mosque interior" loading="lazy">
-      <img src="{{ url_for('static', filename='images/masjid 5.jpeg') }}" alt="dome detail" loading="lazy" style="object-fit: cover;">
-      <img src="{{ url_for('static', filename='images/masjid 6.jpeg') }}" alt="madarsa" loading="lazy">
-      <img src="{{ url_for('static', filename='images/masjid 7.jpeg') }}" alt="islamic art" loading="lazy">
-      <img src="{{ url_for('static', filename='images/masjid 8.jpeg') }}" alt="architecture" loading="lazy">
-      <img src="{{ url_for('static', filename='images/masjid 9.jpeg') }}" alt="mosque" loading="lazy">
-      <img src="{{ url_for('static', filename='images/masjid 10.jpeg') }}" alt="minar" loading="lazy">
-      <img src="{{ url_for('static', filename='images/masjid 11.jpeg') }}" alt="dome" loading="lazy">
-      <img src="{{ url_for('static', filename='images/masjid 12.jpeg') }}" alt="mosque interior" loading="lazy">
-      <img src="{{ url_for('static', filename='images/masjid 13.jpeg') }}" alt="dome detail" loading="lazy">
-      <img src="{{ url_for('static', filename='images/masjid 14.jpeg') }}" alt="madarsa" loading="lazy">
-      <img src="{{ url_for('static', filename='images/masjid 15.jpeg') }}" alt="islamic art" loading="lazy">
-      <img src="{{ url_for('static', filename='images/masjid 16.jpeg') }}" alt="architecture" loading="lazy">
-    </div>
-  </section>
-
-  <!-- 7. DOME TYPES -->
-  <section id="dt" style="padding:6rem 2rem;">
-    <div class="si">
-      <div style="margin-bottom:3rem;" class="sidomtype">
-        <div class="sl">Dome Varieties</div>
-        <h2 class="st">Types of <em>Domes</em> We Build</h2>
-        <p class="sd">Each dome style carries centuries of Islamic architectural history — we master them all.</p>
-      </div>
-      <div class="dg">
-        <div class="dc"><img src="{{ url_for('static', filename='images/Mughal Styl.webp') }}" alt="Onion Dome" loading="lazy">
-          <div class="dco"></div>
-          <div class="dci">
-            <div class="dcs">Mughal Style</div>
-            <div class="dct">Onion Dome</div>
-          </div>
-        </div>
-        <div class="dc"><img src="{{ url_for('static', filename='images/Ottoman Style.jpeg') }}" alt="Ottoman Dome" loading="lazy">
-          <div class="dco"></div>
-          <div class="dci">
-            <div class="dcs">Ottoman Style</div>
-            <div class="dct">Ribbed Dome</div>
-          </div>
-        </div>
-        <div class="dc"><img src="{{ url_for('static', filename='images/Persian Style.jpg') }}" alt="Persian Dome" loading="lazy">
-          <div class="dco"></div>
-          <div class="dci">
-            <div class="dcs">Persian Style</div>
-            <div class="dct">Pointed Dome</div>
-          </div>
-        </div>
-        <div class="dc"><img src="{{ url_for('static', filename='images/Modern Islamic.jpg') }}" alt="Compound Dome" loading="lazy"
-            style="object-position: bottom;">
-          <div class="dco"></div>
-          <div class="dci">
-            <div class="dcs">Modern Islamic</div>
-            <div class="dct">Compound Dome</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 8. MINAR TYPES -->
-  <section id="mt" style="background:var(--dark);padding:6rem 2rem;">
-    <div class="si">
-      <div style="margin-bottom:3rem;" class="minartype">
-        <div class="sl" style="color:var(--gold-light);">Minar Varieties</div>
-        <h2 class="st" style="color:var(--ivory);">Types of <em style="color:var(--gold-light);">Minars</em> We Build
-        </h2>
-        <p class="sd" style="color:rgba(220,245,242,0.65);">Crafted in every classical form — your mosque deserves a
-          minar that speaks its heritage.</p>
-      </div>
-      <div class="mg">
-        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 1.jpeg') }}" alt="Cylindrical Minar" loading="lazy">
-          <div class="mio"></div>
-          <div class="mii">
-            <div class="mit">Cylindrical</div>
-            <div class="mid">Classic round form</div>
-          </div>
-        </div>
-        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 2.jpeg') }}" alt="Octagonal Minar" loading="lazy">
-          <div class="mio"></div>
-          <div class="mii">
-            <div class="mit">Octagonal</div>
-            <div class="mid">8-sided Mughal</div>
-          </div>
-        </div>
-        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 3.jpeg') }}" alt="Tapered Minar" loading="lazy">
-          <div class="mio"></div>
-          <div class="mii">
-            <div class="mit">Tapered</div>
-            <div class="mid">Slim Ottoman style</div>
-          </div>
-        </div>
-        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 4.jpeg') }}" alt="Square Minar" loading="lazy">
-          <div class="mio"></div>
-          <div class="mii">
-            <div class="mit">Square Tower</div>
-            <div class="mid">Moroccan Almohad</div>
-          </div>
-        </div>
-        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 4.jpeg') }}" alt="Decorated Minar" loading="lazy">
-          <div class="mio"></div>
-          <div class="mii">
-            <div class="mit">Decorated</div>
-            <div class="mid">Full ornamentation</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- added new  SCROLLING GALLERY MINARS -->
-  <!-- HTML -->
-  <section id="gallery-section" class="gs-g">
-    <div style="margin-bottom:2rem;">
-      <div class="sl" style="color:var(--gold-light);">Minar gallery</div>
-      <h2 class="st" style="color:var(--dark);">Gallery <em style="color:var(--gold-light);">Minars</em></h2>
-
-    </div>
-    <div class="image-grid">
-      <img src="{{ url_for('static', filename='images/minars/minar 1.jpeg') }}" alt="mosque" loading="lazy" data-i="0">
-      <img src="{{ url_for('static', filename='images/minars/minar 2.jpeg') }}" alt="minar" loading="lazy" data-i="1">
-      <img src="{{ url_for('static', filename='images/minars/minar 3.jpeg') }}" alt="dome" loading="lazy" data-i="2">
-      <img src="{{ url_for('static', filename='images/minars/minar 4.jpeg') }}" alt="mosque interior" loading="lazy" data-i="3">
-      <img src="{{ url_for('static', filename='images/minars/minar 5.jpeg') }}" alt="dome detail" loading="lazy" data-i="4">
-      <img src="{{ url_for('static', filename='images/minars/minar 6.jpeg') }}" alt="madarsa" loading="lazy" data-i="5">
-    </div>
-    <div class="gallery-btn">
-      <a href="{{ url_for('gallery') }}" target="_blank" class="btn-outline">View More →</a>
-    </div>
-  </section>
-
-  <!-- Lightbox -->
-  <div class="lightbox-overlay" id="lightboxOverlay">
-    <button class="lightbox-close" id="lightboxClose">&#x2715;</button>
-    <div class="lightbox-wrapper">
-      <button class="lightbox-arrow lightbox-arrow-prev" id="lightboxPrev">&#8592;</button>
-      <img src="" alt="" id="lightboxImage">
-      <button class="lightbox-arrow lightbox-arrow-next" id="lightboxNext">&#8594;</button>
-    </div>
-    <div class="lightbox-counter" id="lightboxCounter"></div>
+<!-- 1. HERO -->
+<section id="hero">
+  <div class="hbg">
+    <img src="https://img.avianexperiences.com/attractions/5daa9e15-e7a0-40b2-80a5-bd30d4ea57ea"
+      alt="Grand Mosque at dawn" loading="eager">
   </div>
+  <div class="hc">
+    <div class="hey">Crafting Sacred Spaces Since 2005</div>
+    <h1 class="ht">Builders of<br><em>Divine</em> Architecture</h1>
+    <p class="hd">We specialize in constructing majestic Minars, ornate Domes, and complete sacred structures —
+      blending timeless Islamic heritage with modern engineering excellence.</p>
+    <div class="ha">
+      <a href="{{ url_for('projects') }}" class="btn-primary">View Our Portfolio</a>
+      <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
+        target="_blank" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.45);">Free
+        Consultation</a>
+    </div>
+    <div class="hs">
+      <div class="hsi"><span class="hsn">150+</span><span class="hsl">Projects Done</span></div>
+      <div class="hsi"><span class="hsn">20+</span><span class="hsl">Years Exp.</span></div>
+      <div class="hsi"><span class="hsn">12</span><span class="hsl">Cities Served</span></div>
+      <div class="hsi"><span class="hsn">100%</span><span class="hsl">Satisfaction</span></div>
+    </div>
+  </div>
+  <div class="hscroll">
+    <div class="hscroll-line"></div>
+  </div>
+</section>
 
-  <!-- 9. WHY US -->
-  <section id="why" style="background:var(--ivory);padding:6rem 2rem;">
-    <div class="si">
-      <div class="wg">
-        <div class="wic">
-          <img src="{{ url_for('static', filename='images/Ottoman Style.jpeg') }}" alt="Our craftsmanship" class="wim" loading="lazy">
-          <div class="wib">
-            <div
-              style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;line-height:1;margin-bottom: 13px;">
-              150+</div>
-            <div style="font-size:10px;letter-spacing:1px;text-transform:uppercase;opacity:0.9;">Sacred<br>Structures
-            </div>
+
+
+<!-- 3. ABOUT PREVIEW -->
+<section id="about">
+  <div class="si">
+    <div class="ag">
+      <div class="aic">
+        <img src="{{ url_for('static', filename='images/islamic images masjid.jpeg') }}" alt="Mosque dome craftsmanship"
+          class="aim" loading="lazy">
+        <img src="{{ url_for('static', filename='images/mindar details.jpeg') }}" alt="Minar detail" class="aif"
+          loading="lazy">
+        <div class="ab"><span class="abn">20+</span><span class="abt">Years of<br>Excellence</span></div>
+      </div>
+      <div>
+        <div class="sl">Who We Are</div>
+        <h2 class="st">Masters of <em>Islamic</em> Architecture</h2>
+        <img src="https://img.avianexperiences.com/trek/4dbf731b-a451-4de7-b78d-75eff5c6ad6d" alt="Ottoman"
+          class="st-image">
+        <div class="apt">
+          <div class="ap">
+            <div class="api"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg></div>
+            <div class="apt2"><strong>Expert Craftsmen & Engineers</strong><span>Traditional artisans + modern
+                structural engineers for flawless results.</span></div>
+          </div>
+          <div class="ap">
+            <div class="api"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg></div>
+            <div class="apt2"><strong>Premium Quality Materials</strong><span>Finest marbles, stones, and metals
+                befitting sacred structures.</span></div>
+          </div>
+          <div class="ap">
+            <div class="api"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg></div>
+            <div class="apt2"><strong>Customized Islamic Designs</strong><span>Every project uniquely designed —
+                Mughal, Ottoman, Andalusian styles.</span></div>
           </div>
         </div>
-        <div>
-          <div class="sl">Why Al-Emaar</div>
-          <h2 class="st">Built on <em>Trust</em> &amp; Craft</h2>
-          <p class="sd" style="margin-bottom:2.5rem;">Our clients choose us not just for technical mastery, but for our
-            commitment to their vision and the sanctity of the spaces we create.</p>
-          <div class="wfs">
-            <div class="wf">
-              <div class="wi"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round">
-                  <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
-                  <polyline points="9 22 9 12 15 12 15 22" />
-                </svg></div>
-              <div class="wft"><strong>Heritage-Rooted Design</strong>
-                <p>Drawing from 1400 years of Islamic architectural wisdom — Mughal, Ottoman, Fatimid, Andalusian.</p>
-              </div>
+        <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="{{ url_for('services') }}" class="btn-primary">Our Services</a>
+          <a href="https://wa.me/919997868686" target="_blank" class="btn-outline">WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. SERVICES -->
+<section id="services" style="padding:6rem 2rem;background:var(--cream);">
+  <div class="si">
+    <div style="text-align:center;margin-bottom:3.5rem;">
+      <div class="sl c">What We Build</div>
+      <h2 class="st" style="text-align:center;">Our Specialized <em>Services</em></h2>
+      <p class="sd" style="text-align:center;max-width:540px;margin:0 auto;">From single Minars to complete mosque
+        complexes — every component built with masterful precision.</p>
+    </div>
+    <div class="sg">
+      <div class="sc">
+        <div class="sciw"><img src="{{ url_for('static', filename='images/minar construction.jpeg') }}" alt="Minar"
+            class="sci" loading="lazy">
+        </div>
+        <div class="scb">
+          <div class="scn">01</div>
+          <div class="sct">Minar Construction</div>
+          <div class="scd">Octagonal, cylindrical, tapered or fluted minars with ornate balconies, geometric bands,
+            and crescent finials. Heights 20ft–200ft.</div>
+          <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
+            target="_blank" class="btn-outline">Contact
+            Now <i class="ri-arrow-right-circle-line"></i> </a>
+        </div>
+
+      </div>
+      <div class="sc">
+        <div class="sciw"><img src="{{ url_for('static', filename='images/Dome Fabrication.jpeg') }}" alt="Dome"
+            class="sci" loading="lazy" style="object-position: top;"></div>
+        <div class="scb">
+          <div class="scn">02</div>
+          <div class="sct">Dome Fabrication</div>
+          <div class="scd">Onion domes to ribbed Ottoman and Persian domes — in RCC, steel or fiberglass, finished
+            with mosaic tiles, copper or marble cladding.</div>
+          <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
+            target="_blank" class="btn-outline">Contact
+            Now <i class="ri-arrow-right-circle-line"></i> </a>
+        </div>
+      </div>
+      <div class="sc">
+        <div class="sciw"><img src="{{ url_for('static', filename='images/Mosque Constructio.jpeg') }}" alt="Mosque"
+            class="sci" loading="lazy">
+        </div>
+        <div class="scb">
+          <div class="scn">03</div>
+          <div class="sct">Mosque Construction</div>
+          <div class="scd">Complete mosque construction from architectural design to calligraphic details. Prayer
+            halls, wudu areas, minarets, and domes included.</div>
+          <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
+            target="_blank" class="btn-outline">Contact
+            Now <i class="ri-arrow-right-circle-line"></i> </a>
+        </div>
+      </div>
+      <div class="sc">
+        <div class="sciw"><img src="{{ url_for('static', filename='images/Madarsa Buildings.webp') }}" alt="Madarsa"
+            class="sci" loading="lazy">
+        </div>
+        <div class="scb">
+          <div class="scn">04</div>
+          <div class="sct">Madarsa Buildings</div>
+          <div class="scd">Purpose-built Islamic educational institutions with traditional arched corridors, central
+            courtyards, study halls, and residential blocks.</div>
+          <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
+            target="_blank" class="btn-outline">Contact
+            Now <i class="ri-arrow-right-circle-line"></i> </a>
+        </div>
+      </div>
+      <div class="sc">
+        <div class="sciw"><img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=600&q=80"
+            alt="Restoration" class="sci" loading="lazy"></div>
+        <div class="scb">
+          <div class="scn">05</div>
+          <div class="sct">Renovation & Restoration</div>
+          <div class="scd">Breathing new life into heritage mosques — structural restoration, dome repair, minar
+            reinforcement, calligraphy revival and upgrades.</div>
+          <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
+            target="_blank" class="btn-outline">Contact
+            Now <i class="ri-arrow-right-circle-line"></i> </a>
+        </div>
+      </div>
+      <div class="sc">
+        <div class="sciw"><img src="{{ url_for('static', filename='images/Islamic Ornamentation.jpeg') }}"
+            alt="Ornamentation" class="sci" loading="lazy"></div>
+        <div class="scb">
+          <div class="scn">06</div>
+          <div class="sct">Islamic Ornamentation</div>
+          <div class="scd">Geometric Arabesques, Muqarnas, Zellij tile mosaic, calligraphic panels, jali screens, and
+            hand-carved plasterwork — art in every surface.</div>
+          <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
+            target="_blank" class="btn-outline">Contact
+            Now <i class="ri-arrow-right-circle-line"></i> </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- style="text-align:center;margin-bottom:3.5rem;" -->
+
+<!-- 5. PROJECTS PREVIEW -->
+<section id="pp" style="background:var(--dark);padding:6rem 2rem;">
+  <div class="si">
+    <div class="pph">
+      <div>
+        <div class="sl" style="color:var(--gold-light);">Our Portfolio</div>
+        <h2 class="st" style="color:var(--ivory);">Featured <em style="color:var(--gold-light);">Projects</em></h2>
+      </div>
+      <a href="{{ url_for('projects') }}" class="btn-outline"
+        style="color:var(--gold-light);border-color:var(--gold-light);white-space:nowrap;">View All →</a>
+    </div>
+    <div class="pmg">
+      <div class="pt tall">
+        <img src="{{ url_for('static', filename='images/masjid 1.jpeg') }}" alt="Minar Project" loading="lazy">
+        <div class="pov"></div>
+        <div class="pin">
+          <div class="pc">Minar Construction</div>
+          <div class="pn">Premium Minar Design</div>
+        </div>
+      </div>
+
+      <div class="pt">
+        <img src="{{ url_for('static', filename='images/masjid 2.jpeg') }}" alt="Minar Project" loading="lazy">
+        <div class="pov"></div>
+        <div class="pin">
+          <div class="pc">Minar - Project</div>
+          <div class="pn">Twin Minar Structure</div>
+        </div>
+      </div>
+
+      <div class="pt">
+        <img src="{{ url_for('static', filename='images/masjid 3.jpeg') }}" alt="Minar Project" loading="lazy">
+        <div class="pov"></div>
+        <div class="pin">
+          <div class="pc">Minar Work</div>
+          <div class="pn">Modern Minar Design</div>
+        </div>
+      </div>
+
+      <div class="pt">
+        <img src="{{ url_for('static', filename='images/masjid 4.jpeg') }}" alt="Minar Project" loading="lazy">
+        <div class="pov"></div>
+        <div class="pin">
+          <div class="pc">Minar Project</div>
+          <div class="pn">Classic Minar Style</div>
+        </div>
+      </div>
+
+      <div class="pt">
+        <img src="{{ url_for('static', filename='images/masjid 5.jpeg') }}" alt="Minar Project" loading="lazy">
+        <div class="pov"></div>
+        <div class="pin">
+          <div class="pc">Minar Restoration</div>
+          <div class="pn">Heritage Minar Work</div>
+        </div>
+      </div>
+
+       <div class="pt">
+        <img src="{{ url_for('static', filename='images/domes 1.webp') }}" alt="Minar Project" loading="lazy">
+        <div class="pov"></div>
+        <div class="pin">
+          <div class="pc">Dome Structure</div>
+          <div class="pn">Jalgaon, Maharashtra</div>
+        </div>
+      </div>
+
+        <div class="pt">
+        <img src="{{ url_for('static', filename='images/domes 2.jpg') }}" alt="Minar Project" loading="lazy">
+        <div class="pov"></div>
+        <div class="pin">
+          <div class="pc">10.5 Ft GRC Ghumbaj</div>
+          <div class="pn">Expertly designed dome </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- 6. SCROLLING GALLERY -->
+<section id="gs">
+  <div class="gstrip">
+    <img src="{{ url_for('static', filename='images/masjid 1.jpeg') }}" alt="mosque" loading="lazy">
+    <img src="{{ url_for('static', filename='images/masjid 2.jpeg') }}" alt="minar" loading="lazy">
+    <img src="{{ url_for('static', filename='images/masjid 3.jpeg') }}" alt="dome" loading="lazy">
+    <img src="{{ url_for('static', filename='images/masjid 4.jpeg') }}" alt="mosque interior" loading="lazy">
+    <img src="{{ url_for('static', filename='images/masjid 5.jpeg') }}" alt="dome detail" loading="lazy"
+      style="object-fit: cover;">
+    <img src="{{ url_for('static', filename='images/masjid 6.jpeg') }}" alt="madarsa" loading="lazy">
+    <img src="{{ url_for('static', filename='images/masjid 7.jpeg') }}" alt="islamic art" loading="lazy">
+    <img src="{{ url_for('static', filename='images/masjid 8.jpeg') }}" alt="architecture" loading="lazy">
+    <img src="{{ url_for('static', filename='images/masjid 9.jpeg') }}" alt="mosque" loading="lazy">
+    <img src="{{ url_for('static', filename='images/masjid 10.jpeg') }}" alt="minar" loading="lazy">
+    <img src="{{ url_for('static', filename='images/masjid 11.jpeg') }}" alt="dome" loading="lazy">
+    <img src="{{ url_for('static', filename='images/masjid 12.jpeg') }}" alt="mosque interior" loading="lazy">
+    <img src="{{ url_for('static', filename='images/masjid 13.jpeg') }}" alt="dome detail" loading="lazy">
+    <img src="{{ url_for('static', filename='images/masjid 14.jpeg') }}" alt="madarsa" loading="lazy">
+    <img src="{{ url_for('static', filename='images/masjid 15.jpeg') }}" alt="islamic art" loading="lazy">
+    <img src="{{ url_for('static', filename='images/masjid 16.jpeg') }}" alt="architecture" loading="lazy">
+  </div>
+</section>
+
+<!-- 7. DOME TYPES -->
+<section id="dt" style="padding:6rem 2rem;">
+  <div class="si">
+    <div style="margin-bottom:3rem;" class="sidomtype">
+      <div class="sl">Dome Varieties</div>
+      <h2 class="st">Types of <em>Domes</em> We Build</h2>
+      <p class="sd">Each dome style carries centuries of Islamic architectural history — we master them all.</p>
+    </div>
+    <div class="dg">
+      <div class="dc"><img src="{{ url_for('static', filename='images/Mughal Styl.webp') }}" alt="Onion Dome"
+          loading="lazy">
+        <div class="dco"></div>
+        <div class="dci">
+          <div class="dcs">Mughal Style</div>
+          <div class="dct">Onion Dome</div>
+        </div>
+      </div>
+      <div class="dc"><img src="{{ url_for('static', filename='images/Ottoman Style.jpeg') }}" alt="Ottoman Dome"
+          loading="lazy">
+        <div class="dco"></div>
+        <div class="dci">
+          <div class="dcs">Ottoman Style</div>
+          <div class="dct">Ribbed Dome</div>
+        </div>
+      </div>
+      <div class="dc"><img src="{{ url_for('static', filename='images/Persian Style.jpg') }}" alt="Persian Dome"
+          loading="lazy">
+        <div class="dco"></div>
+        <div class="dci">
+          <div class="dcs">Persian Style</div>
+          <div class="dct">Pointed Dome</div>
+        </div>
+      </div>
+      <div class="dc"><img src="{{ url_for('static', filename='images/Modern Islamic.jpg') }}" alt="Compound Dome"
+          loading="lazy" style="object-position: bottom;">
+        <div class="dco"></div>
+        <div class="dci">
+          <div class="dcs">Modern Islamic</div>
+          <div class="dct">Compound Dome</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 8. MINAR TYPES -->
+<section id="mt" style="background:var(--dark);padding:6rem 2rem;">
+  <div class="si">
+    <div style="margin-bottom:3rem;" class="minartype">
+      <div class="sl" style="color:var(--gold-light);">Minar Varieties</div>
+      <h2 class="st" style="color:var(--ivory);">Types of <em style="color:var(--gold-light);">Minars</em> We Build
+      </h2>
+      <p class="sd" style="color:rgba(220,245,242,0.65);">Crafted in every classical form — your mosque deserves a
+        minar that speaks its heritage.</p>
+    </div>
+    <div class="mg">
+      <div class="mi"><img src="{{ url_for('static', filename='images/minar type 1.jpeg') }}" alt="Cylindrical Minar"
+          loading="lazy">
+        <div class="mio"></div>
+        <div class="mii">
+          <div class="mit">Circular Minar</div>
+          <div class="mid">Classic Round Design</div>
+        </div>
+      </div>
+      <div class="mi"><img src="{{ url_for('static', filename='images/minar type 2.jpeg') }}" alt="Octagonal Minar"
+          loading="lazy">
+        <div class="mio"></div>
+        <div class="mii">
+          <div class="mit">Octagonal</div>
+          <div class="mid">Octagonal Mughal Minar</div>
+        </div>
+      </div>
+      <div class="mi"><img src="{{ url_for('static', filename='images/minar type 3.jpeg') }}" alt="Tapered Minar"
+          loading="lazy">
+        <div class="mio"></div>
+        <div class="mii">
+          <div class="mit">Tapered Ottoman Minar</div>
+          <div class="mid">Slim Turkish-Inspired Design</div>
+        </div>
+      </div>
+      <div class="mi"><img src="{{ url_for('static', filename='images/minar type 4.jpeg') }}" alt="Square Minar"
+          loading="lazy">
+        <div class="mio"></div>
+        <div class="mii">
+          <div class="mit">Decorative Moroccan Minar</div>
+          <div class="mid">Intricate Islamic Geometric Design</div>
+        </div>
+      </div>
+      <div class="mi"><img src="{{ url_for('static', filename='images/minar type 5.webp') }}" alt="Decorated Minar"
+          loading="lazy">
+        <div class="mio"></div>
+        <div class="mii">
+          <div class="mit">Contemporary Mosque Minar</div>
+          <div class="mid">Modern Islamic Architecture</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- added new  SCROLLING GALLERY MINARS -->
+<!-- HTML -->
+<section id="gallery-section" class="gs-g">
+  <div style="margin-bottom:2rem;">
+    <div class="sl" style="color:var(--gold-light);">Minar gallery</div>
+    <h2 class="st" style="color:var(--dark);">Gallery <em style="color:var(--gold-light);">Minars</em></h2>
+
+  </div>
+  <div class="image-grid">
+    <img src="{{ url_for('static', filename='images/minars/minar 1.jpeg') }}" alt="mosque" loading="lazy" data-i="0">
+    <img src="{{ url_for('static', filename='images/minars/minar 2.jpeg') }}" alt="minar" loading="lazy" data-i="1">
+    <img src="{{ url_for('static', filename='images/minars/minar 3.jpeg') }}" alt="dome" loading="lazy" data-i="2">
+    <img src="{{ url_for('static', filename='images/minars/minar 4.jpeg') }}" alt="mosque interior" loading="lazy"
+      data-i="3">
+    <img src="{{ url_for('static', filename='images/minars/minar 5.jpeg') }}" alt="dome detail" loading="lazy"
+      data-i="4">
+    <img src="{{ url_for('static', filename='images/minars/minar 6.jpeg') }}" alt="madarsa" loading="lazy" data-i="5">
+  </div>
+  <div class="gallery-btn">
+    <a href="{{ url_for('gallery') }}" target="_blank" class="btn-outline">View More →</a>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightboxOverlay">
+  <button class="lightbox-close" id="lightboxClose">&#x2715;</button>
+  <div class="lightbox-wrapper">
+    <button class="lightbox-arrow lightbox-arrow-prev" id="lightboxPrev">&#8592;</button>
+    <img src="" alt="" id="lightboxImage">
+    <button class="lightbox-arrow lightbox-arrow-next" id="lightboxNext">&#8594;</button>
+  </div>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+<!-- 9. WHY US -->
+<section id="why" style="background:var(--ivory);padding:6rem 2rem;">
+  <div class="si">
+    <div class="wg">
+      <div class="wic">
+        <img src="{{ url_for('static', filename='images/Ottoman Style.jpeg') }}" alt="Our craftsmanship" class="wim"
+          loading="lazy">
+        <div class="wib">
+          <div
+            style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;line-height:1;margin-bottom: 13px;">
+            150+</div>
+          <div style="font-size:10px;letter-spacing:1px;text-transform:uppercase;opacity:0.9;">Sacred<br>Structures
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="sl">Why Al-Emaar</div>
+        <h2 class="st">Built on <em>Trust</em> &amp; Craft</h2>
+        <p class="sd" style="margin-bottom:2.5rem;">Our clients choose us not just for technical mastery, but for our
+          commitment to their vision and the sanctity of the spaces we create.</p>
+        <div class="wfs">
+          <div class="wf">
+            <div class="wi"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg></div>
+            <div class="wft"><strong>Heritage-Rooted Design</strong>
+              <p>Drawing from 1400 years of Islamic architectural wisdom — Mughal, Ottoman, Fatimid, Andalusian.</p>
             </div>
-            <div class="wf">
-              <div class="wi"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round">
-                  <circle cx="12" cy="12" r="10" />
-                  <polyline points="12 6 12 12 16 14" />
-                </svg></div>
-              <div class="wft"><strong>On-Time Delivery</strong>
-                <p>Strict project management ensures timely completion without compromising quality or sanctity.</p>
-              </div>
+          </div>
+          <div class="wf">
+            <div class="wi"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg></div>
+            <div class="wft"><strong>On-Time Delivery</strong>
+              <p>Strict project management ensures timely completion without compromising quality or sanctity.</p>
             </div>
-            <div class="wf">
-              <div class="wi"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg></div>
-              <div class="wft"><strong>Structural Excellence</strong>
-                <p>Modern engineering ensures every Minar and Dome is seismically sound, built to last centuries.</p>
-              </div>
+          </div>
+          <div class="wf">
+            <div class="wi"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg></div>
+            <div class="wft"><strong>Structural Excellence</strong>
+              <p>Modern engineering ensures every Minar and Dome is seismically sound, built to last centuries.</p>
             </div>
-            <div class="wf">
-              <div class="wi"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round">
-                  <line x1="12" y1="1" x2="12" y2="23" />
-                  <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
-                </svg></div>
-              <div class="wft"><strong>Transparent Pricing</strong>
-                <p>Detailed proposals with no hidden costs — you know every rupee of your investment.</p>
-              </div>
+          </div>
+          <div class="wf">
+            <div class="wi"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round">
+                <line x1="12" y1="1" x2="12" y2="23" />
+                <path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+              </svg></div>
+            <div class="wft"><strong>Transparent Pricing</strong>
+              <p>Detailed proposals with no hidden costs — you know every rupee of your investment.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- 10. IMAGE MOSAIC -->
-  <section id="mosaic" style="background:var(--white);padding:6rem 2rem;">
-    <div class="si">
-      <div style="text-align:center;margin-bottom:3rem;">
-        <div class="sl c">Our Craftsmanship</div>
-        <h2 class="st" style="text-align:center;">Beauty in <em>Every Detail</em></h2>
+<!-- 10. IMAGE MOSAIC -->
+<section id="mosaic" style="background:var(--white);padding:6rem 2rem;">
+  <div class="si">
+    <div style="text-align:center;margin-bottom:3rem;">
+      <div class="sl c">Our Craftsmanship</div>
+      <h2 class="st" style="text-align:center;">Beauty in <em>Every Detail</em></h2>
+    </div>
+    <div class="mgd">
+      <div class="mc tall"><img
+          src="https://www.abirpothi.com/wp-content/uploads/2023/01/The-Asfi-Mosque-located-near-the-Bara-Imambara-in-Lucknow-India-scaled.jpg"
+          alt="Masjid Lahore" loading="lazy">
+        <div class="mcp"><span>Masjid Al-Noor, Lahore</span></div>
       </div>
-      <div class="mgd">
-        <div class="mc tall"><img
-            src="https://www.abirpothi.com/wp-content/uploads/2023/01/The-Asfi-Mosque-located-near-the-Bara-Imambara-in-Lucknow-India-scaled.jpg"
-            alt="Masjid Lahore" loading="lazy">
-          <div class="mcp"><span>Masjid Al-Noor, Lahore</span></div>
-        </div>
-        <div class="mc wide"><img
-            src="https://www.hoteldekho.com/blog/wp-content/uploads/2021/12/Mosques-in-India-6-2.jpg"
-            alt="Mosque Interior" loading="lazy">
-          <div class="mcp"><span>Prayer Hall Dome — Islamabad</span></div>
-        </div>
-        <div class="mc"><img
-            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/ac/52/53/masjid-sultan-ahmad-shah.jpg?w=800&h=500&s=1"
-            alt="Dome" loading="lazy">
-          <div class="mcp"><span>Grand Dome, Rawalpindi</span></div>
-        </div>
-        <div class="mc"><img src="{{ url_for('static', filename='images/minar type 2.jpeg') }}" alt="Minar" loading="lazy">
-          <div class="mcp"><span>Twin Minars, Faisalabad</span></div>
-        </div>
-        <div class="mc"><img
-            src="https://risemalaysia.com.my/wp-content/uploads/2022/11/Sejarah-Masjid-Negeri-Sultan-Ahmad-1.jpg"
-            alt="Tile detail" loading="lazy">
-          <div class="mcp"><span>Tile Mosaic Detail</span></div>
-        </div>
-        <div class="mc"><img
-            src="https://images.unsplash.com/photo-1590273089302-ebbc53986b6e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9zcXVlfGVufDB8fDB8fHww"
-            alt="Arched corridor" loading="lazy">
-          <div class="mcp"><span>Arched Corridor — Madarsa</span></div>
-        </div>
+      <div class="mc wide"><img
+          src="https://www.hoteldekho.com/blog/wp-content/uploads/2021/12/Mosques-in-India-6-2.jpg"
+          alt="Mosque Interior" loading="lazy">
+        <div class="mcp"><span>Prayer Hall Dome — Islamabad</span></div>
+      </div>
+      <div class="mc"><img
+          src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/ac/52/53/masjid-sultan-ahmad-shah.jpg?w=800&h=500&s=1"
+          alt="Dome" loading="lazy">
+        <div class="mcp"><span>Grand Dome, Rawalpindi</span></div>
+      </div>
+      <div class="mc"><img src="{{ url_for('static', filename='images/minar type 2.jpeg') }}" alt="Minar"
+          loading="lazy">
+        <div class="mcp"><span>Twin Minars, Faisalabad</span></div>
+      </div>
+      <div class="mc"><img
+          src="https://risemalaysia.com.my/wp-content/uploads/2022/11/Sejarah-Masjid-Negeri-Sultan-Ahmad-1.jpg"
+          alt="Tile detail" loading="lazy">
+        <div class="mcp"><span>Tile Mosaic Detail</span></div>
+      </div>
+      <div class="mc"><img
+          src="https://images.unsplash.com/photo-1590273089302-ebbc53986b6e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9zcXVlfGVufDB8fDB8fHww"
+          alt="Arched corridor" loading="lazy">
+        <div class="mcp"><span>Arched Corridor — Madarsa</span></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- 11. STATS BAND -->
-  <section class="contact-now">
-    <div class="sacred-section">
-      <div class="geo-bg"></div>
-      <div class="arch-top"></div>
+<!-- 11. STATS BAND -->
+<section class="contact-now">
+  <div class="sacred-section">
+    <div class="geo-bg"></div>
+    <div class="arch-top"></div>
 
-      <div class="card">
-        <div class="corner tl"></div>
-        <div class="corner tr"></div>
-        <div class="corner bl"></div>
-        <div class="corner br"></div>
+    <div class="card">
+      <div class="corner tl"></div>
+      <div class="corner tr"></div>
+      <div class="corner bl"></div>
+      <div class="corner br"></div>
 
-        <div class="icon-dome">
-          <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" width="56" height="56">
-            <path d="M28 8 C18 8 10 18 10 26 L46 26 C46 18 38 8 28 8Z" fill="none" stroke="#c9a227"
-              stroke-width="1.2" />
-            <line x1="28" y1="3" x2="28" y2="8" stroke="#c9a227" stroke-width="1" />
-            <circle cx="28" cy="3" r="1.5" fill="#c9a227" />
-            <rect x="8" y="26" width="40" height="4" rx="1" fill="none" stroke="#c9a227" stroke-width="1" />
-            <rect x="14" y="30" width="6" height="12" rx="1" fill="none" stroke="rgba(201,162,39,0.5)"
-              stroke-width="0.8" />
-            <rect x="25" y="30" width="6" height="12" rx="1" fill="none" stroke="rgba(201,162,39,0.5)"
-              stroke-width="0.8" />
-            <rect x="36" y="30" width="6" height="12" rx="1" fill="none" stroke="rgba(201,162,39,0.5)"
-              stroke-width="0.8" />
-            <line x1="8" y1="42" x2="48" y2="42" stroke="#c9a227" stroke-width="1" />
-            <path d="M4 42 C6 36 6 30 4 26" stroke="rgba(201,162,39,0.4)" stroke-width="0.8" fill="none" />
-            <path d="M52 42 C50 36 50 30 52 26" stroke="rgba(201,162,39,0.4)" stroke-width="0.8" fill="none" />
+      <div class="icon-dome">
+        <svg viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" width="56" height="56">
+          <path d="M28 8 C18 8 10 18 10 26 L46 26 C46 18 38 8 28 8Z" fill="none" stroke="#c9a227" stroke-width="1.2" />
+          <line x1="28" y1="3" x2="28" y2="8" stroke="#c9a227" stroke-width="1" />
+          <circle cx="28" cy="3" r="1.5" fill="#c9a227" />
+          <rect x="8" y="26" width="40" height="4" rx="1" fill="none" stroke="#c9a227" stroke-width="1" />
+          <rect x="14" y="30" width="6" height="12" rx="1" fill="none" stroke="rgba(201,162,39,0.5)"
+            stroke-width="0.8" />
+          <rect x="25" y="30" width="6" height="12" rx="1" fill="none" stroke="rgba(201,162,39,0.5)"
+            stroke-width="0.8" />
+          <rect x="36" y="30" width="6" height="12" rx="1" fill="none" stroke="rgba(201,162,39,0.5)"
+            stroke-width="0.8" />
+          <line x1="8" y1="42" x2="48" y2="42" stroke="#c9a227" stroke-width="1" />
+          <path d="M4 42 C6 36 6 30 4 26" stroke="rgba(201,162,39,0.4)" stroke-width="0.8" fill="none" />
+          <path d="M52 42 C50 36 50 30 52 26" stroke="rgba(201,162,39,0.4)" stroke-width="0.8" fill="none" />
+        </svg>
+      </div>
+
+      <div class="divider">
+        <div class="divider-line"></div>
+        <div class="divider-diamond"></div>
+        <div class="divider-line"></div>
+      </div>
+
+      <h2 class="card-title">Begin Your Sacred Project</h2>
+
+      <p class="card-sub">Designing mosques, domes &amp; minars with timeless<br>architecture and precision
+        craftsmanship.
+      </p>
+
+      <div class="btns">
+        <a href="tel:+919997868686" class="btn-link btn-call">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 011.07 1.18 2 2 0 013.06.99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0121.23 16l.69.92z" />
           </svg>
-        </div>
+          Call Now
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=919997868686&text=Assalamu+Alaikum%21+I+need+a+free+consultation.&type=phone_number&app_absent=0"
+          target="_blank" class="btn-link btn-wa">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,0.8)">
+            <path
+              d="M20.52 3.48A11.93 11.93 0 0012 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.6 5.99L0 24l6.19-1.62A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.48-8.52zM12 22c-1.85 0-3.67-.5-5.26-1.44l-.38-.22-3.67.96.98-3.58-.25-.39A9.94 9.94 0 012 12C2 6.49 6.49 2 12 2s10 4.49 10 10-4.49 10-10 10zm5.48-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.11 3.22 5.11 4.51.72.31 1.28.5 1.71.64.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.34z" />
+          </svg>
+          WhatsApp
+        </a>
+      </div>
 
-        <div class="divider">
-          <div class="divider-line"></div>
-          <div class="divider-diamond"></div>
-          <div class="divider-line"></div>
-        </div>
+      <p class="footer-note">Architecture &nbsp;·&nbsp; Sacred Spaces</p>
+    </div>
+  </div>
+</section>
 
-        <h2 class="card-title">Begin Your Sacred Project</h2>
+<!-- 12. IMAGE CTA BANNER -->
+<section id="icta" style="position:relative;overflow:hidden;padding:7rem 2rem;">
+  <div class="ictabg">
+    <img
+      src="https://www.theleela.com/prod/content/assets/aio-banner/dekstop/Jama-Masjid.jpg?VersionId=o5tFkeYn4KWDgRsx2mqrMFNlQBa9Mv5M"
+      alt="Sacred architecture" loading="lazy">
+  </div>
+  <div class="ictac">
+    <div class="sl c" style="color:var(--gold-light);">Begin Your Project</div>
+    <h2 class="st" style="color:white;text-align:center;margin-top:0.5rem;">Ready to Build Something <em
+        style="color:var(--gold-light);">Sacred?</em></h2>
+    <p class="sd" style="color:rgba(255,255,255,0.7);text-align:center;margin:0 auto 2.5rem;max-width:560px;">Every
+      mosque, madarsa, or minar we build is an act of service. Let us bring your vision to life with mastery, care,
+      and deep respect for Islamic heritage.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20want%20to%20start%20a%20project."
+        target="_blank" class="btn-white">WhatsApp Us Now</a>
+      <a href="{{ url_for('projects') }}" class="btn-outline"
+        style="color:white;border-color:rgba(255,255,255,0.4);">View Our
+        Work</a>
+    </div>
+  </div>
+</section>
 
-        <p class="card-sub">Designing mosques, domes &amp; minars with timeless<br>architecture and precision
-          craftsmanship.
-        </p>
-
-        <div class="btns">
-          <a href="tel:+919997868686" class="btn-link btn-call">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 011.07 1.18 2 2 0 013.06.99h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0121.23 16l.69.92z" />
-            </svg>
-            Call Now
-          </a>
-          <a href="https://api.whatsapp.com/send/?phone=919997868686&text=Assalamu+Alaikum%21+I+need+a+free+consultation.&type=phone_number&app_absent=0"
-            target="_blank" class="btn-link btn-wa">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="rgba(255,255,255,0.8)">
-              <path
-                d="M20.52 3.48A11.93 11.93 0 0012 0C5.37 0 0 5.37 0 12c0 2.11.55 4.17 1.6 5.99L0 24l6.19-1.62A11.94 11.94 0 0012 24c6.63 0 12-5.37 12-12 0-3.2-1.25-6.21-3.48-8.52zM12 22c-1.85 0-3.67-.5-5.26-1.44l-.38-.22-3.67.96.98-3.58-.25-.39A9.94 9.94 0 012 12C2 6.49 6.49 2 12 2s10 4.49 10 10-4.49 10-10 10zm5.48-7.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.47-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.87 1.22 3.07c.15.2 2.11 3.22 5.11 4.51.72.31 1.28.5 1.71.64.72.23 1.37.2 1.89.12.58-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.34z" />
-            </svg>
-            WhatsApp
-          </a>
-        </div>
-
-        <p class="footer-note">Architecture &nbsp;·&nbsp; Sacred Spaces</p>
+<!-- 13. PROCESS -->
+<section id="process" style="background:var(--white);padding:6rem 2rem;">
+  <div class="si">
+    <div style="text-align:center;margin-bottom:4rem;">
+      <div class="sl c">How We Work</div>
+      <h2 class="st" style="text-align:center;">Our <em>Process</em></h2>
+      <p class="sd" style="text-align:center;max-width:480px;margin:0 auto;">From the first conversation to the final
+        key handover — transparent at every step.</p>
+    </div>
+    <div class="prg">
+      <div class="prs">
+        <div class="prn">1</div>
+        <div class="prt">Consultation</div>
+        <div class="prd">We listen to your vision, requirements, budget, and timeline.</div>
+      </div>
+      <div class="prs">
+        <div class="prn">2</div>
+        <div class="prt">Design & Planning</div>
+        <div class="prd">3D designs, architectural style finalized with your approval.</div>
+      </div>
+      <div class="prs">
+        <div class="prn">3</div>
+        <div class="prt">Material Sourcing</div>
+        <div class="prd">Premium marble, stone, ceramics — quality-checked and certified.</div>
+      </div>
+      <div class="prs">
+        <div class="prn">4</div>
+        <div class="prt">Construction</div>
+        <div class="prd">Master craftsmen build with precision, weekly progress reports.</div>
+      </div>
+      <div class="prs">
+        <div class="prn">5</div>
+        <div class="prt">Handover</div>
+        <div class="prd">Final inspection, structural warranty, and full ongoing support.</div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- 12. IMAGE CTA BANNER -->
-  <section id="icta" style="position:relative;overflow:hidden;padding:7rem 2rem;">
-    <div class="ictabg">
-      <img src="https://t4.ftcdn.net/jpg/03/00/37/57/360_F_300375722_U8cs9serCBCZDAVxfWdAsu2nhGDR495P.jpg"
-        alt="Sacred architecture" loading="lazy">
+<!-- 14. TESTIMONIALS -->
+<section id="tst" style="background:var(--cream);padding:6rem 2rem;">
+  <div class="si">
+    <div style="text-align:center;margin-bottom:3rem;">
+      <div class="sl c">Client Stories</div>
+      <h2 class="st" style="text-align:center;">What Our <em>Clients Say</em></h2>
     </div>
-    <div class="ictac">
-      <div class="sl c" style="color:var(--gold-light);">Begin Your Project</div>
-      <h2 class="st" style="color:white;text-align:center;margin-top:0.5rem;">Ready to Build Something <em
-          style="color:var(--gold-light);">Sacred?</em></h2>
-      <p class="sd" style="color:rgba(255,255,255,0.7);text-align:center;margin:0 auto 2.5rem;max-width:560px;">Every
-        mosque, madarsa, or minar we build is an act of service. Let us bring your vision to life with mastery, care,
-        and deep respect for Islamic heritage.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-        <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20want%20to%20start%20a%20project."
-          target="_blank" class="btn-white">WhatsApp Us Now</a>
-        <a href="{{ url_for('projects') }}" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.4);">View Our
-          Work</a>
-      </div>
-    </div>
-  </section>
+    <div class="tg">
 
-  <!-- 13. PROCESS -->
-  <section id="process" style="background:var(--white);padding:6rem 2rem;">
-    <div class="si">
-      <div style="text-align:center;margin-bottom:4rem;">
-        <div class="sl c">How We Work</div>
-        <h2 class="st" style="text-align:center;">Our <em>Process</em></h2>
-        <p class="sd" style="text-align:center;max-width:480px;margin:0 auto;">From the first conversation to the final
-          key handover — transparent at every step.</p>
-      </div>
-      <div class="prg">
-        <div class="prs">
-          <div class="prn">1</div>
-          <div class="prt">Consultation</div>
-          <div class="prd">We listen to your vision, requirements, budget, and timeline.</div>
+      <div class="tc">
+        <div class="tst">★★★★★</div><span class="tq">"</span>
+        <div class="tt">
+          Our mosque’s minar construction was completed with outstanding craftsmanship. The design reflects true Islamic
+          architecture and has become a landmark in our area. Highly professional team.
         </div>
-        <div class="prs">
-          <div class="prn">2</div>
-          <div class="prt">Design & Planning</div>
-          <div class="prd">3D designs, architectural style finalized with your approval.</div>
-        </div>
-        <div class="prs">
-          <div class="prn">3</div>
-          <div class="prt">Material Sourcing</div>
-          <div class="prd">Premium marble, stone, ceramics — quality-checked and certified.</div>
-        </div>
-        <div class="prs">
-          <div class="prn">4</div>
-          <div class="prt">Construction</div>
-          <div class="prd">Master craftsmen build with precision, weekly progress reports.</div>
-        </div>
-        <div class="prs">
-          <div class="prn">5</div>
-          <div class="prt">Handover</div>
-          <div class="prd">Final inspection, structural warranty, and full ongoing support.</div>
+        <div class="ta">
+          <strong>Mohammed Arif Khan</strong>
+          <span>Masjid Committee Member, Lucknow</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- 14. TESTIMONIALS -->
-  <section id="tst" style="background:var(--cream);padding:6rem 2rem;">
-    <div class="si">
-      <div style="text-align:center;margin-bottom:3rem;">
-        <div class="sl c">Client Stories</div>
-        <h2 class="st" style="text-align:center;">What Our <em>Clients Say</em></h2>
-      </div>
-      <div class="tg">
-        <div class="tc">
-          <div class="tst">★★★★★</div><span class="tq">"</span>
-          <div class="tt">Al-Emaar transformed our mosque with two magnificent Minars that the entire city now
-            recognizes. Their attention to Islamic geometric detail is unmatched. Project delivered on time and within
-            budget.</div>
-          <div class="ta"><strong>Hafiz Abdul Rehman</strong><span>Masjid Committee Chairman, Lahore</span></div>
+      <div class="tc">
+        <div class="tst">★★★★★</div><span class="tq">"</span>
+        <div class="tt">
+          We hired them for dome fabrication and finishing work. The quality, detailing, and timely delivery exceeded
+          our expectations. One of the best construction teams we’ve worked with.
         </div>
-        <div class="tc">
-          <div class="tst">★★★★★</div><span class="tq">"</span>
-          <div class="tt">We entrusted them with our Madarsa's complete construction. The result feels both contemporary
-            and deeply rooted in Islamic tradition. Students and teachers love the space. Exceptional quality.</div>
-          <div class="ta"><strong>Maulana Tariq Jamil</strong><span>Principal, Jamia Al-Rashidiya, Karachi</span></div>
-        </div>
-        <div class="tc">
-          <div class="tst">★★★★★</div><span class="tq">"</span>
-          <div class="tt">The dome restoration on our 80-year-old heritage mosque was handled with incredible
-            sensitivity. They matched the original tilework perfectly. This team truly honors our architectural legacy.
-          </div>
-          <div class="ta"><strong>Chaudhry Maqbool Ahmed</strong><span>Waqf Board Member, Multan</span></div>
+        <div class="ta">
+          <strong>Imran Shaikh</strong>
+          <span>Trustee, Masjid Project, Mumbai</span>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- 15. INSIGHTS -->
-  <section id="ins" style="background:var(--ivory);padding:6rem 2rem;">
-    <div class="si">
-      <div class="inh">
-        <div>
-          <div class="sl">Knowledge & Insights</div>
-          <h2 class="st">Islamic Architecture <em>Guide</em></h2>
+      <div class="tc">
+        <div class="tst">★★★★★</div><span class="tq">"</span>
+        <div class="tt">
+          Their restoration work on our old mosque was exceptional. They preserved the traditional look while improving
+          structural strength. Truly reliable and skilled professionals.
         </div>
-        <a href="https://wa.me/919997868686" target="_blank" class="btn-outline">Ask Our Experts</a>
+        <div class="ta">
+          <strong>Abdul Rahman Siddiqui</strong>
+          <span>Waqf Committee, Hyderabad</span>
+        </div>
       </div>
-      <div class="ing">
-        <div class="inc">
-          <img
-            src="https://s.alicdn.com/@sc04/kf/HTB10spSgKySBuNjy1zdq6xPxFXa9/Dome-Steel-Building-Glass-Dome-Roof-Mosque-with-Low-Cost.jpg"
-            alt="Dome guide" loading="lazy">
-          <div class="inb">
-            <div class="incat">Dome Construction</div>
-            <div class="intit">How to Choose the Right Dome Style for Your Mosque</div>
-            <div class="indsc">From Mughal onion domes to Ottoman ribbed designs — understanding which style suits your
-              mosque's architecture.</div>
-          </div>
+
+      <div class="tc">
+        <div class="tst">★★★★★</div><span class="tq">"</span>
+        <div class="tt">
+          The minar design and finishing work was executed perfectly. Their team maintained excellent quality standards
+          and completed the project within the promised timeline. Highly recommended for mosque construction work.
         </div>
-        <div class="inc">
-          <img src="{{ url_for('static', filename='images/minar type 2.jpeg') }}" alt="Minar guide" loading="lazy">
-          <div class="inb">
-            <div class="incat">Minar Design</div>
-            <div class="intit">Minar Height & Design: What You Need to Know</div>
-            <div class="indsc">Factors to consider when commissioning a Minar — height ratios, structural needs, balcony
-              tiers, and local codes.</div>
-          </div>
+        <div class="ta">
+          <strong>Yusuf Patel</strong>
+          <span>Masjid Committee, Ahmedabad</span>
         </div>
-        <div class="inc">
-          <img src="{{ url_for('static', filename='images/masjid 2.jpeg') }}" alt="Materials" loading="lazy">
-          <div class="inb">
-            <div class="incat">Materials & Finish</div>
-            <div class="intit">Marble, Tile or Fiberglass? Choosing Your Dome Finish</div>
-            <div class="indsc">A guide to the pros, durability, and cost of different dome finishing materials — from
-              marble to glazed tiles.</div>
-          </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 15. INSIGHTS -->
+<section id="ins" style="background:var(--ivory);padding:6rem 2rem;">
+  <div class="si">
+    <div class="inh">
+      <div>
+        <div class="sl">Knowledge & Insights</div>
+        <h2 class="st">Islamic Architecture <em>Guide</em></h2>
+      </div>
+      <a href="https://wa.me/919997868686" target="_blank" class="btn-outline">Ask Our Experts</a>
+    </div>
+    <div class="ing">
+      <div class="inc">
+        <img
+          src="https://s.alicdn.com/@sc04/kf/HTB10spSgKySBuNjy1zdq6xPxFXa9/Dome-Steel-Building-Glass-Dome-Roof-Mosque-with-Low-Cost.jpg"
+          alt="Dome guide" loading="lazy">
+        <div class="inb">
+          <div class="incat">Dome Construction</div>
+          <div class="intit">How to Choose the Right Dome Style for Your Mosque</div>
+          <div class="indsc">From Mughal onion domes to Ottoman ribbed designs — understanding which style suits your
+            mosque's architecture.</div>
+        </div>
+      </div>
+      <div class="inc">
+        <img src="{{ url_for('static', filename='images/minar type 2.jpeg') }}" alt="Minar guide" loading="lazy">
+        <div class="inb">
+          <div class="incat">Minar Design</div>
+          <div class="intit">Minar Height & Design: What You Need to Know</div>
+          <div class="indsc">Factors to consider when commissioning a Minar — height ratios, structural needs, balcony
+            tiers, and local codes.</div>
+        </div>
+      </div>
+      <div class="inc">
+        <img src="{{ url_for('static', filename='images/masjid 2.jpeg') }}" alt="Materials" loading="lazy">
+        <div class="inb">
+          <div class="incat">Materials & Finish</div>
+          <div class="intit">Marble, Tile or Fiberglass? Choosing Your Dome Finish</div>
+          <div class="indsc">A guide to the pros, durability, and cost of different dome finishing materials — from
+            marble to glazed tiles.</div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- 16. FINAL CTA -->
-  <section id="cta"
-    style="background:linear-gradient(135deg,#0E7A6B 0%,#046E8F 100%);padding:6rem 2rem;text-align:center;">
-    <div class="si">
-      <div class="sl c" style="color:rgba(255,255,255,0.6);">Start Your Project</div>
-      <h2 class="st" style="color:white;text-align:center;margin-top:0.5rem;">Let's Build Something <span
-          style="color: var(--cream);font-style: italic;text-decoration: underline;">Timeless</span></h2>
-      <p class="sd" style="text-align:center;color:rgba(255,255,255,0.72);max-width:520px;margin:0 auto 2.5rem;">Whether
-        it's a single Minar or a complete mosque complex — we are ready with masterful craftsmanship and genuine
-        reverence.</p>
-      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
-        <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20want%20to%20discuss%20a%20project."
-          target="_blank" class="btn-white">WhatsApp Us Now</a>
-        <a href="{{ url_for('projects') }}" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.4);">View
-          Portfolio</a>
-      </div>
+<!-- 16. FINAL CTA -->
+<section id="cta"
+  style="background:linear-gradient(135deg,#0E7A6B 0%,#046E8F 100%);padding:6rem 2rem;text-align:center;">
+  <div class="si">
+    <div class="sl c" style="color:rgba(255,255,255,0.6);">Start Your Project</div>
+    <h2 class="st" style="color:white;text-align:center;margin-top:0.5rem;">Let's Build Something <span
+        style="color: var(--cream);font-style: italic;text-decoration: underline;">Timeless</span></h2>
+    <p class="sd" style="text-align:center;color:rgba(255,255,255,0.72);max-width:520px;margin:0 auto 2.5rem;">Whether
+      it's a single Minar or a complete mosque complex — we are ready with masterful craftsmanship and genuine
+      reverence.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+      <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20want%20to%20discuss%20a%20project."
+        target="_blank" class="btn-white">WhatsApp Us Now</a>
+      <a href="{{ url_for('projects') }}" class="btn-outline"
+        style="color:white;border-color:rgba(255,255,255,0.4);">View
+        Portfolio</a>
     </div>
-  </section>
+  </div>
+</section>
 
 
 
-  <!-- FOOTER -->
+<!-- FOOTER -->
 {% endblock %}

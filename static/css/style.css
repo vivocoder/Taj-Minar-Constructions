@@ -1102,7 +1102,7 @@ nav.scrolled {
 
 .pmg {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
   grid-template-rows: 320px 260px;
   gap: 10px !important;
 }
@@ -2297,7 +2297,7 @@ footer {
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(12, 14, 13, 0.72);
+  background: rgba(12, 14, 13, 0.6);
 }
 
 .cch-c {
