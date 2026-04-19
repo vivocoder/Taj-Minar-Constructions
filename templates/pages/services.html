@@ -1,0 +1,240 @@
+{% extends "base.html" %}
+
+{% block title %}Services — Taj Minar Constructions{% endblock %}
+
+{% block content %}
+
+  <!-- PAGE HERO -->
+  <div class="pgbg">
+    <img src="https://mosqpedia.org/wp-content/uploads/2024/08/pq3lBoBQEnGYmqIOqv9HV7Msi9aq5IvIJ6UxxbDD-scaled.jpeg"
+      alt="Services hero" loading="lazy">
+    <div class="pgbg-c">
+      <div class="sl c" style="color:var(--gold-light);">What We Build</div>
+      <h1 class="st" style="color:var(--ivory);text-align:center;margin-top:0.5rem;font-weight: bold;">Our <em
+          style="color:var(--gold-light);">Services</em></h1>
+      <p style="color:rgba(255, 255, 255, 0.65);max-width:540px;margin:0 auto;font-size:15px;">From single Minars to
+        complete mosque complexes — every component built with masterful precision and deep reverence.</p>
+    </div>
+  </div>
+
+  <!-- SERVICES GRID -->
+  <section id="services" style="padding:6rem 2rem;background:var(--cream);">
+    <div class="si">
+      <div class="sg">
+        <div class="sc">
+          <div class="sciw"><img src="{{ url_for('static', filename='images/minar construction.jpeg') }}" alt="Minar" class="sci" loading="lazy">
+          </div>
+          <div class="scb">
+            <div class="scn">01</div>
+            <div class="sct">Minar Construction</div>
+            <div class="scd">Octagonal, cylindrical, tapered or fluted minars with ornate balconies, geometric bands,
+              and crescent finials. Heights 20ft–200ft.</div>
+          </div>
+        </div>
+        <div class="sc">
+          <div class="sciw"><img src="{{ url_for('static', filename='images/Dome Fabrication.jpeg') }}" alt="Dome" class="sci" loading="lazy"></div>
+          <div class="scb">
+            <div class="scn">02</div>
+            <div class="sct">Dome Fabrication</div>
+            <div class="scd">Onion domes to ribbed Ottoman and Persian domes — in RCC, steel or fiberglass, finished
+              with mosaic tiles, copper or marble cladding.</div>
+          </div>
+        </div>
+        <div class="sc">
+          <div class="sciw"><img src="{{ url_for('static', filename='images/Mosque Constructio.jpeg') }}" alt="Mosque" class="sci" loading="lazy">
+          </div>
+          <div class="scb">
+            <div class="scn">03</div>
+            <div class="sct">Mosque Construction</div>
+            <div class="scd">Complete mosque construction from architectural design to calligraphic details. Prayer
+              halls, wudu areas, minarets, and domes included.</div>
+          </div>
+        </div>
+        <div class="sc">
+          <div class="sciw"><img src="{{ url_for('static', filename='images/Madarsa Buildings.webp') }}" alt="Madarsa" class="sci" loading="lazy">
+          </div>
+          <div class="scb">
+            <div class="scn">04</div>
+            <div class="sct">Madarsa Buildings</div>
+            <div class="scd">Purpose-built Islamic educational institutions with traditional arched corridors, central
+              courtyards, study halls, and residential blocks.</div>
+          </div>
+        </div>
+        <div class="sc">
+          <div class="sciw"><img src="https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=600&q=80"
+              alt="Restoration" class="sci" loading="lazy"></div>
+          <div class="scb">
+            <div class="scn">05</div>
+            <div class="sct">Renovation & Restoration</div>
+            <div class="scd">Breathing new life into heritage mosques — structural restoration, dome repair, minar
+              reinforcement, calligraphy revival and upgrades.</div>
+          </div>
+        </div>
+        <div class="sc">
+          <div class="sciw"><img src="{{ url_for('static', filename='images/Islamic Ornamentation.jpeg') }}" alt="Ornamentation" class="sci"
+              loading="lazy"></div>
+          <div class="scb">
+            <div class="scn">06</div>
+            <div class="sct">Islamic Ornamentation</div>
+            <div class="scd">Geometric Arabesques, Muqarnas, Zellij tile mosaic, calligraphic panels, jali screens, and
+              hand-carved plasterwork — art in every surface.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOME TYPES -->
+  <section id="dt" style="padding:6rem 2rem;background:var(--white);">
+    <div class="si">
+      <div style="margin-bottom:3rem;">
+        <div class="sl">Dome Varieties</div>
+        <h2 class="st">Types of <em>Domes</em> We Build</h2>
+        <p class="sd">Each dome style carries centuries of Islamic architectural history — we master them all.</p>
+      </div>
+
+      <div class="dg">
+        <div class="dc"><img src="{{ url_for('static', filename='images/Mughal Styl.webp') }}" alt="Onion Dome" loading="lazy">
+          <div class="dco"></div>
+          <div class="dci">
+            <div class="dcs">Mughal Style</div>
+            <div class="dct">Onion Dome</div>
+          </div>
+        </div>
+        <div class="dc"><img src="{{ url_for('static', filename='images/Ottoman Style.jpeg') }}" alt="Ottoman Dome" loading="lazy">
+          <div class="dco"></div>
+          <div class="dci">
+            <div class="dcs">Ottoman Style</div>
+            <div class="dct">Ribbed Dome</div>
+          </div>
+        </div>
+        <div class="dc"><img src="{{ url_for('static', filename='images/Persian Style.jpg') }}" alt="Persian Dome" loading="lazy">
+          <div class="dco"></div>
+          <div class="dci">
+            <div class="dcs">Persian Style</div>
+            <div class="dct">Pointed Dome</div>
+          </div>
+        </div>
+        <div class="dc"><img src="{{ url_for('static', filename='images/Modern Islamic.jpg') }}" alt="Compound Dome" loading="lazy"
+            style="object-position: bottom;">
+          <div class="dco"></div>
+          <div class="dci">
+            <div class="dcs">Modern Islamic</div>
+            <div class="dct">Compound Dome</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MINAR TYPES -->
+  <section id="mt" style="background:var(--dark);padding:6rem 2rem;">
+    <div class="si">
+      <div style="margin-bottom:3rem;">
+        <div class="sl" style="color:var(--gold-light);">Minar Varieties</div>
+        <h2 class="st" style="color:var(--ivory);">Types of <em style="color:var(--gold-light);">Minars</em> We Build
+        </h2>
+        <p class="sd" style="color:rgba(220,245,242,0.65);">Crafted in every classical form — your mosque deserves a
+          minar that speaks its heritage.</p>
+      </div>
+
+      <div class="mg">
+        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 1.jpeg') }}" alt="Cylindrical Minar" loading="lazy">
+          <div class="mio"></div>
+          <div class="mii">
+            <div class="mit">Cylindrical</div>
+            <div class="mid">Classic round form</div>
+          </div>
+        </div>
+        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 2.jpeg') }}" alt="Octagonal Minar" loading="lazy">
+          <div class="mio"></div>
+          <div class="mii">
+            <div class="mit">Octagonal</div>
+            <div class="mid">8-sided Mughal</div>
+          </div>
+        </div>
+        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 3.jpeg') }}" alt="Tapered Minar" loading="lazy">
+          <div class="mio"></div>
+          <div class="mii">
+            <div class="mit">Tapered</div>
+            <div class="mid">Slim Ottoman style</div>
+          </div>
+        </div>
+        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 4.jpeg') }}" alt="Square Minar" loading="lazy">
+          <div class="mio"></div>
+          <div class="mii">
+            <div class="mit">Square Tower</div>
+            <div class="mid">Moroccan Almohad</div>
+          </div>
+        </div>
+        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 4.jpeg') }}" alt="Decorated Minar" loading="lazy">
+          <div class="mio"></div>
+          <div class="mii">
+            <div class="mit">Decorated</div>
+            <div class="mid">Full ornamentation</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" style="background:var(--white);padding:6rem 2rem;">
+    <div class="si">
+      <div style="text-align:center;margin-bottom:4rem;">
+        <div class="sl c">How We Work</div>
+        <h2 class="st" style="text-align:center;">Our <em>Process</em></h2>
+        <p class="sd" style="text-align:center;max-width:480px;margin:0 auto;">From the first conversation to the final
+          key handover — transparent at every step.</p>
+      </div>
+      <div class="prg">
+        <div class="prs">
+          <div class="prn">1</div>
+          <div class="prt">Consultation</div>
+          <div class="prd">We listen to your vision, requirements, budget, and timeline.</div>
+        </div>
+        <div class="prs">
+          <div class="prn">2</div>
+          <div class="prt">Design & Planning</div>
+          <div class="prd">3D designs, architectural style finalized with your approval.</div>
+        </div>
+        <div class="prs">
+          <div class="prn">3</div>
+          <div class="prt">Material Sourcing</div>
+          <div class="prd">Premium marble, stone, ceramics — quality-checked and certified.</div>
+        </div>
+        <div class="prs">
+          <div class="prn">4</div>
+          <div class="prt">Construction</div>
+          <div class="prd">Master craftsmen build with precision, weekly progress reports.</div>
+        </div>
+        <div class="prs">
+          <div class="prn">5</div>
+          <div class="prt">Handover</div>
+          <div class="prd">Final inspection, structural warranty, and full ongoing support.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta"
+    style="background:linear-gradient(135deg,#0E7A6B 0%,#046E8F 100%);padding:6rem 2rem;text-align:center;">
+    <div class="si" style="text-align: center;">
+      <div class="sl c" style="color:rgba(255,255,255,0.6);">Start Your Project</div>
+      <h2 class="st" style="color:white;text-align:center;margin:0.5rem auto;">Ready to Build Something <span
+          style="color: var(--cream);font-style: italic;text-decoration: underline;"> Sacred? </span></h2>
+      <p class="sd" style="text-align:center;color:rgba(255,255,255,0.72);max-width:520px;margin:0 auto 2.5rem;">Whether
+        it's a single Minar or a complete mosque complex — we are ready.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20want%20to%20discuss%20a%20project."
+          target="_blank" class="btn-white">WhatsApp Us Now</a>
+        <a href="{{ url_for('contact') }}" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.4);">Contact
+          Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+{% endblock %}

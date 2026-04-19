@@ -1,58 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Taj Minar Constructions — Minars, Domes & Sacred Architecture</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
+{% block title %}Taj Minar Constructions — Minars, Domes & Sacred Architecture{% endblock %}
 
-<body>
-
-  <!-- WhatsApp Float -->
-  <a href="https://api.whatsapp.com/send/?phone=919997868686&text=Assalamu+Alaikum%21+I+am+interested+in+your+construction+services.&type=phone_number&app_absent=0"
-    target="_blank" class="wa-float">
-    <i class="ri-whatsapp-line" style="font-size: 2rem;"></i>
-  </a>
-
-  <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
-    <i class="ri-arrow-up-line"></i>
-  </button>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mob">
-    <!-- <button class="mobile-close" onclick="closeMob()"> <i class="ri-close-large-fill"></i></button> -->
-    <a href="index.html" onclick="closeMob()">Home</a>
-    <a href="about.html" onclick="closeMob()">About</a>
-    <a href="services.html" onclick="closeMob()">Services</a>
-    <a href="projects.html" onclick="closeMob()">Projects</a>
-    <a href="contact.html" onclick="closeMob()">Contact</a>
-  </div>
-
-  <!-- Nav -->
-  <nav id="nav">
-    <a href="index.html" class="logo">
-      <div><span class="logo-name">Taj Minar</span><span class="logo-tag">Sacred Architecture</span></div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
-    </ul>
-    <!-- <button class="hamburger" onclick="openMob()"><i class="ri-menu-3-line"></i></button> -->
-
-    <button class="hamburger" onclick="toggleMob()">
-      <i id="menuIcon" class="ri-menu-3-line"></i>
-    </button>
-
-  </nav>
+{% block content %}
 
   <!-- 1. HERO -->
   <section id="hero">
@@ -66,7 +16,7 @@
       <p class="hd">We specialize in constructing majestic Minars, ornate Domes, and complete sacred structures —
         blending timeless Islamic heritage with modern engineering excellence.</p>
       <div class="ha">
-        <a href="projects.html" class="btn-primary">View Our Portfolio</a>
+        <a href="{{ url_for('projects') }}" class="btn-primary">View Our Portfolio</a>
         <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20need%20a%20free%20consultation."
           target="_blank" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.45);">Free
           Consultation</a>
@@ -90,9 +40,9 @@
     <div class="si">
       <div class="ag">
         <div class="aic">
-          <img src="assets/images/islamic images masjid.jpeg" alt="Mosque dome craftsmanship" class="aim"
+          <img src="{{ url_for('static', filename='images/islamic images masjid.jpeg') }}" alt="Mosque dome craftsmanship" class="aim"
             loading="lazy">
-          <img src="assets/images/mindar details.jpeg" alt="Minar detail" class="aif" loading="lazy">
+          <img src="{{ url_for('static', filename='images/mindar details.jpeg') }}" alt="Minar detail" class="aif" loading="lazy">
           <div class="ab"><span class="abn">20+</span><span class="abt">Years of<br>Excellence</span></div>
         </div>
         <div>
@@ -127,7 +77,7 @@
             </div>
           </div>
           <div style="margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap;">
-            <a href="services.html" class="btn-primary">Our Services</a>
+            <a href="{{ url_for('services') }}" class="btn-primary">Our Services</a>
             <a href="https://wa.me/919997868686" target="_blank" class="btn-outline">WhatsApp Us</a>
           </div>
         </div>
@@ -146,7 +96,7 @@
       </div>
       <div class="sg">
         <div class="sc">
-          <div class="sciw"><img src="assets/images/minar construction.jpeg" alt="Minar" class="sci" loading="lazy">
+          <div class="sciw"><img src="{{ url_for('static', filename='images/minar construction.jpeg') }}" alt="Minar" class="sci" loading="lazy">
           </div>
           <div class="scb">
             <div class="scn">01</div>
@@ -160,7 +110,7 @@
 
         </div>
         <div class="sc">
-          <div class="sciw"><img src="assets/images/Dome Fabrication.jpeg" alt="Dome" class="sci" loading="lazy"
+          <div class="sciw"><img src="{{ url_for('static', filename='images/Dome Fabrication.jpeg') }}" alt="Dome" class="sci" loading="lazy"
               style="object-position: top;"></div>
           <div class="scb">
             <div class="scn">02</div>
@@ -173,7 +123,7 @@
           </div>
         </div>
         <div class="sc">
-          <div class="sciw"><img src="assets/images/Mosque Constructio.jpeg" alt="Mosque" class="sci" loading="lazy">
+          <div class="sciw"><img src="{{ url_for('static', filename='images/Mosque Constructio.jpeg') }}" alt="Mosque" class="sci" loading="lazy">
           </div>
           <div class="scb">
             <div class="scn">03</div>
@@ -186,7 +136,7 @@
           </div>
         </div>
         <div class="sc">
-          <div class="sciw"><img src="assets/images/Madarsa Buildings.webp" alt="Madarsa" class="sci" loading="lazy">
+          <div class="sciw"><img src="{{ url_for('static', filename='images/Madarsa Buildings.webp') }}" alt="Madarsa" class="sci" loading="lazy">
           </div>
           <div class="scb">
             <div class="scn">04</div>
@@ -212,7 +162,7 @@
           </div>
         </div>
         <div class="sc">
-          <div class="sciw"><img src="assets/images/Islamic Ornamentation.jpeg" alt="Ornamentation" class="sci"
+          <div class="sciw"><img src="{{ url_for('static', filename='images/Islamic Ornamentation.jpeg') }}" alt="Ornamentation" class="sci"
               loading="lazy"></div>
           <div class="scb">
             <div class="scn">06</div>
@@ -237,12 +187,12 @@
           <div class="sl" style="color:var(--gold-light);">Our Portfolio</div>
           <h2 class="st" style="color:var(--ivory);">Featured <em style="color:var(--gold-light);">Projects</em></h2>
         </div>
-        <a href="projects.html" class="btn-outline"
+        <a href="{{ url_for('projects') }}" class="btn-outline"
           style="color:var(--gold-light);border-color:var(--gold-light);white-space:nowrap;">View All →</a>
       </div>
       <div class="pmg">
         <div class="pt tall">
-          <img src="assets/images/masjid 1.jpeg" alt="Masjid Al-Noor Lahore" loading="lazy">
+          <img src="{{ url_for('static', filename='images/masjid 1.jpeg') }}" alt="Masjid Al-Noor Lahore" loading="lazy">
           <div class="pov"></div>
           <div class="pin">
             <div class="pc">Grand Mosque · 2023</div>
@@ -251,7 +201,7 @@
           </div>
         </div>
         <div class="pt">
-          <img src="assets/images/masjid 2.jpeg" alt="Twin Minars" loading="lazy">
+          <img src="{{ url_for('static', filename='images/masjid 2.jpeg') }}" alt="Twin Minars" loading="lazy">
           <div class="pov"></div>
           <div class="pin">
             <div class="pc">Minar · 2022</div>
@@ -259,7 +209,7 @@
           </div>
         </div>
         <div class="pt">
-          <img src="assets/images/masjid 3.jpeg" alt="Grand Dome" loading="lazy">
+          <img src="{{ url_for('static', filename='images/masjid 3.jpeg') }}" alt="Grand Dome" loading="lazy">
           <div class="pov"></div>
           <div class="pin">
             <div class="pc">Dome · 2022</div>
@@ -267,7 +217,7 @@
           </div>
         </div>
         <div class="pt">
-          <img src="assets/images/masjid 4.jpeg" alt="Jamia Islamia" loading="lazy">
+          <img src="{{ url_for('static', filename='images/masjid 4.jpeg') }}" alt="Jamia Islamia" loading="lazy">
           <div class="pov"></div>
           <div class="pin">
             <div class="pc">Madarsa · 2022</div>
@@ -275,7 +225,7 @@
           </div>
         </div>
         <div class="pt">
-          <img src="assets/images/masjid 5.jpeg" alt="Heritage Mosque" loading="lazy">
+          <img src="{{ url_for('static', filename='images/masjid 5.jpeg') }}" alt="Heritage Mosque" loading="lazy">
           <div class="pov"></div>
           <div class="pin">
             <div class="pc">Restoration · 2023</div>
@@ -289,22 +239,22 @@
   <!-- 6. SCROLLING GALLERY -->
   <section id="gs">
     <div class="gstrip">
-      <img src="assets/images/masjid 1.jpeg" alt="mosque" loading="lazy">
-      <img src="assets/images/masjid 2.jpeg" alt="minar" loading="lazy">
-      <img src="assets/images/masjid 3.jpeg" alt="dome" loading="lazy">
-      <img src="assets/images/masjid 4.jpeg" alt="mosque interior" loading="lazy">
-      <img src="assets/images/masjid 5.jpeg" alt="dome detail" loading="lazy" style="object-fit: cover;">
-      <img src="assets/images/masjid 6.jpeg" alt="madarsa" loading="lazy">
-      <img src="assets/images/masjid 7.jpeg" alt="islamic art" loading="lazy">
-      <img src="assets/images/masjid 8.jpeg" alt="architecture" loading="lazy">
-      <img src="assets/images/masjid 9.jpeg" alt="mosque" loading="lazy">
-      <img src="assets/images/masjid 10.jpeg" alt="minar" loading="lazy">
-      <img src="assets/images/masjid 11.jpeg" alt="dome" loading="lazy">
-      <img src="assets/images/masjid 12.jpeg" alt="mosque interior" loading="lazy">
-      <img src="assets/images/masjid 13.jpeg" alt="dome detail" loading="lazy">
-      <img src="assets/images/masjid 14.jpeg" alt="madarsa" loading="lazy">
-      <img src="assets/images/masjid 15.jpeg" alt="islamic art" loading="lazy">
-      <img src="assets/images/masjid 16.jpeg" alt="architecture" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 1.jpeg') }}" alt="mosque" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 2.jpeg') }}" alt="minar" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 3.jpeg') }}" alt="dome" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 4.jpeg') }}" alt="mosque interior" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 5.jpeg') }}" alt="dome detail" loading="lazy" style="object-fit: cover;">
+      <img src="{{ url_for('static', filename='images/masjid 6.jpeg') }}" alt="madarsa" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 7.jpeg') }}" alt="islamic art" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 8.jpeg') }}" alt="architecture" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 9.jpeg') }}" alt="mosque" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 10.jpeg') }}" alt="minar" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 11.jpeg') }}" alt="dome" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 12.jpeg') }}" alt="mosque interior" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 13.jpeg') }}" alt="dome detail" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 14.jpeg') }}" alt="madarsa" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 15.jpeg') }}" alt="islamic art" loading="lazy">
+      <img src="{{ url_for('static', filename='images/masjid 16.jpeg') }}" alt="architecture" loading="lazy">
     </div>
   </section>
 
@@ -317,28 +267,28 @@
         <p class="sd">Each dome style carries centuries of Islamic architectural history — we master them all.</p>
       </div>
       <div class="dg">
-        <div class="dc"><img src="assets/images/Mughal Styl.webp" alt="Onion Dome" loading="lazy">
+        <div class="dc"><img src="{{ url_for('static', filename='images/Mughal Styl.webp') }}" alt="Onion Dome" loading="lazy">
           <div class="dco"></div>
           <div class="dci">
             <div class="dcs">Mughal Style</div>
             <div class="dct">Onion Dome</div>
           </div>
         </div>
-        <div class="dc"><img src="assets/images/Ottoman Style.jpeg" alt="Ottoman Dome" loading="lazy">
+        <div class="dc"><img src="{{ url_for('static', filename='images/Ottoman Style.jpeg') }}" alt="Ottoman Dome" loading="lazy">
           <div class="dco"></div>
           <div class="dci">
             <div class="dcs">Ottoman Style</div>
             <div class="dct">Ribbed Dome</div>
           </div>
         </div>
-        <div class="dc"><img src="assets/images/Persian Style.jpg" alt="Persian Dome" loading="lazy">
+        <div class="dc"><img src="{{ url_for('static', filename='images/Persian Style.jpg') }}" alt="Persian Dome" loading="lazy">
           <div class="dco"></div>
           <div class="dci">
             <div class="dcs">Persian Style</div>
             <div class="dct">Pointed Dome</div>
           </div>
         </div>
-        <div class="dc"><img src="assets/images/Modern Islamic.jpg" alt="Compound Dome" loading="lazy"
+        <div class="dc"><img src="{{ url_for('static', filename='images/Modern Islamic.jpg') }}" alt="Compound Dome" loading="lazy"
             style="object-position: bottom;">
           <div class="dco"></div>
           <div class="dci">
@@ -361,35 +311,35 @@
           minar that speaks its heritage.</p>
       </div>
       <div class="mg">
-        <div class="mi"><img src="assets/images/minar type 1.jpeg" alt="Cylindrical Minar" loading="lazy">
+        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 1.jpeg') }}" alt="Cylindrical Minar" loading="lazy">
           <div class="mio"></div>
           <div class="mii">
             <div class="mit">Cylindrical</div>
             <div class="mid">Classic round form</div>
           </div>
         </div>
-        <div class="mi"><img src="assets/images/minar type 2.jpeg" alt="Octagonal Minar" loading="lazy">
+        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 2.jpeg') }}" alt="Octagonal Minar" loading="lazy">
           <div class="mio"></div>
           <div class="mii">
             <div class="mit">Octagonal</div>
             <div class="mid">8-sided Mughal</div>
           </div>
         </div>
-        <div class="mi"><img src="assets/images/minar type 3.jpeg" alt="Tapered Minar" loading="lazy">
+        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 3.jpeg') }}" alt="Tapered Minar" loading="lazy">
           <div class="mio"></div>
           <div class="mii">
             <div class="mit">Tapered</div>
             <div class="mid">Slim Ottoman style</div>
           </div>
         </div>
-        <div class="mi"><img src="assets/images/minar type 4.jpeg" alt="Square Minar" loading="lazy">
+        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 4.jpeg') }}" alt="Square Minar" loading="lazy">
           <div class="mio"></div>
           <div class="mii">
             <div class="mit">Square Tower</div>
             <div class="mid">Moroccan Almohad</div>
           </div>
         </div>
-        <div class="mi"><img src="assets/images/minar type 4.jpeg" alt="Decorated Minar" loading="lazy">
+        <div class="mi"><img src="{{ url_for('static', filename='images/minar type 4.jpeg') }}" alt="Decorated Minar" loading="lazy">
           <div class="mio"></div>
           <div class="mii">
             <div class="mit">Decorated</div>
@@ -409,15 +359,15 @@
 
     </div>
     <div class="image-grid">
-      <img src="assets/images/minars/minar 1.jpeg" alt="mosque" loading="lazy" data-i="0">
-      <img src="assets/images/minars/minar 2.jpeg" alt="minar" loading="lazy" data-i="1">
-      <img src="assets/images/minars/minar 3.jpeg" alt="dome" loading="lazy" data-i="2">
-      <img src="assets/images/minars/minar 4.jpeg" alt="mosque interior" loading="lazy" data-i="3">
-      <img src="assets/images/minars/minar 5.jpeg" alt="dome detail" loading="lazy" data-i="4">
-      <img src="assets/images/minars/minar 6.jpeg" alt="madarsa" loading="lazy" data-i="5">
+      <img src="{{ url_for('static', filename='images/minars/minar 1.jpeg') }}" alt="mosque" loading="lazy" data-i="0">
+      <img src="{{ url_for('static', filename='images/minars/minar 2.jpeg') }}" alt="minar" loading="lazy" data-i="1">
+      <img src="{{ url_for('static', filename='images/minars/minar 3.jpeg') }}" alt="dome" loading="lazy" data-i="2">
+      <img src="{{ url_for('static', filename='images/minars/minar 4.jpeg') }}" alt="mosque interior" loading="lazy" data-i="3">
+      <img src="{{ url_for('static', filename='images/minars/minar 5.jpeg') }}" alt="dome detail" loading="lazy" data-i="4">
+      <img src="{{ url_for('static', filename='images/minars/minar 6.jpeg') }}" alt="madarsa" loading="lazy" data-i="5">
     </div>
     <div class="gallery-btn">
-      <a href="gallery.html" target="_blank" class="btn-outline">View More →</a>
+      <a href="{{ url_for('gallery') }}" target="_blank" class="btn-outline">View More →</a>
     </div>
   </section>
 
@@ -437,7 +387,7 @@
     <div class="si">
       <div class="wg">
         <div class="wic">
-          <img src="assets/images/Ottoman Style.jpeg" alt="Our craftsmanship" class="wim" loading="lazy">
+          <img src="{{ url_for('static', filename='images/Ottoman Style.jpeg') }}" alt="Our craftsmanship" class="wim" loading="lazy">
           <div class="wib">
             <div
               style="font-family:'Cormorant Garamond',serif;font-size:40px;font-weight:700;line-height:1;margin-bottom: 13px;">
@@ -520,7 +470,7 @@
             alt="Dome" loading="lazy">
           <div class="mcp"><span>Grand Dome, Rawalpindi</span></div>
         </div>
-        <div class="mc"><img src="assets/images/minar type 2.jpeg" alt="Minar" loading="lazy">
+        <div class="mc"><img src="{{ url_for('static', filename='images/minar type 2.jpeg') }}" alt="Minar" loading="lazy">
           <div class="mcp"><span>Twin Minars, Faisalabad</span></div>
         </div>
         <div class="mc"><img
@@ -620,7 +570,7 @@
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
         <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20want%20to%20start%20a%20project."
           target="_blank" class="btn-white">WhatsApp Us Now</a>
-        <a href="projects.html" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.4);">View Our
+        <a href="{{ url_for('projects') }}" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.4);">View Our
           Work</a>
       </div>
     </div>
@@ -720,7 +670,7 @@
           </div>
         </div>
         <div class="inc">
-          <img src="assets/images/minar type 2.jpeg" alt="Minar guide" loading="lazy">
+          <img src="{{ url_for('static', filename='images/minar type 2.jpeg') }}" alt="Minar guide" loading="lazy">
           <div class="inb">
             <div class="incat">Minar Design</div>
             <div class="intit">Minar Height & Design: What You Need to Know</div>
@@ -729,7 +679,7 @@
           </div>
         </div>
         <div class="inc">
-          <img src="assets/images/masjid 2.jpeg" alt="Materials" loading="lazy">
+          <img src="{{ url_for('static', filename='images/masjid 2.jpeg') }}" alt="Materials" loading="lazy">
           <div class="inb">
             <div class="incat">Materials & Finish</div>
             <div class="intit">Marble, Tile or Fiberglass? Choosing Your Dome Finish</div>
@@ -754,7 +704,7 @@
       <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
         <a href="https://wa.me/919997868686?text=Assalamu%20Alaikum!%20I%20want%20to%20discuss%20a%20project."
           target="_blank" class="btn-white">WhatsApp Us Now</a>
-        <a href="projects.html" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.4);">View
+        <a href="{{ url_for('projects') }}" class="btn-outline" style="color:white;border-color:rgba(255,255,255,0.4);">View
           Portfolio</a>
       </div>
     </div>
@@ -763,83 +713,4 @@
 
 
   <!-- FOOTER -->
-  <footer>
-    <div class="fi">
-      <div>
-        <div class="fln">Taj-Minar Constructions</div>
-        <div
-          style="font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold-light);margin-bottom:0.5rem;">
-          Sacred Architecture Since 2005</div>
-        <div class="fab">Specialists in Minar, Dome, and Mosque construction. Building sacred spaces with reverence,
-          precision, and artistry across India.</div>
-        <div class="sis" style="margin-top:1.5rem;">
-          <a href="https://wa.me/9997868686" target="_blank" class="si2">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-            </svg></a>
-          <a href="https://www.instagram.com/masjid_ki_minar?utm_source=qr&igsh=MTRmNnN5NXRyYTBpNw==" target="_blank"
-            class="si2">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" />
-              <circle cx="12" cy="12" r="5" />
-              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
-            </svg></a>
-          <a href="tel:+919997868686" class="si2">
-            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round">
-              <path
-                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.68A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.16 6.16l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
-            </svg></a>
-        </div>
-      </div>
-      <div>
-        <div class="fh">Services</div>
-        <ul class="fl">
-          <li><a href="services.html">Minar Construction</a></li>
-          <li><a href="services.html">Dome Fabrication</a></li>
-          <li><a href="services.html">Mosque Construction</a></li>
-          <li><a href="services.html">Madarsa Buildings</a></li>
-          <li><a href="services.html">Restoration</a></li>
-          <li><a href="services.html">Ornamentation</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="fh">Quick Links</div>
-        <ul class="fl">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="https://wa.me/9997868686" target="_blank">Get a Quote</a></li>
-        </ul>
-      </div>
-      <div>
-        <!-- , ,  -->
-        <div class="fh">Contact</div>
-        <p style="font-size:13px;line-height:1.85;">Near Shibli National College ,<br>Civil Lines, Azamgarh-276001,
-          <br> Uttar Pradesh .
-        </p>
-        <p style="margin-top:0.75rem;"><a href="tel:+919997868686"
-            style="color:var(--gold-light);text-decoration:none;font-size:13px;">+91 9997868686</a></p>
-        <p><a href="https://wa.me/9997868686"
-            style="color:var(--gold-light);text-decoration:none;font-size:13px;">WhatsApp Chat</a></p>
-        <p style="margin-top:0.75rem;font-size:11px;color:rgba(220,245,242,0.4);">Mon–Sat: 9:00am – 6:00pm</p>
-      </div>
-    </div>
-    <div class="fb">
-      <p>© 2025 Al-Emaar Constructions. All Rights Reserved.</p>
-      <div style="display:flex;gap:2rem;">
-        <a href="https://wa.me/9997868686" target="_blank"
-          style="color:rgba(220,245,242,0.5);font-size:12px;text-decoration:none;">WhatsApp</a>
-        <a href="https://www.instagram.com/masjid_ki_minar?utm_source=qr&igsh=MTRmNnN5NXRyYTBpNw==" target="_blank"
-          style="color:rgba(220,245,242,0.5);font-size:12px;text-decoration:none;">Instagram</a>
-      </div>
-    </div>
-  </footer>
-
-  <script src="assets/js/script.js"></script>
-</body>
-
-</html>
+{% endblock %}

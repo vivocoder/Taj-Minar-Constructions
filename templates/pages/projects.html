@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block title %}Projects — Taj Minar Constructions{% endblock %}
+
+{% block content %}
+
+  <!-- PAGE HERO -->
+  <div class="pgbg">
+    <img src="https://cdn.pixabay.com/photo/2021/01/30/12/31/sultan-qaboos-grand-mosque-5963726_1280.jpg" alt="Projects hero" loading="lazy">
+    <div class="pgbg-c">
+      <div class="sl c" style="color:var(--gold-light);">Our Portfolio</div>
+      <h1 class="st" style="color:var(--ivory);text-align:center;margin-top:0.5rem;">Completed <em
+          style="color:var(--gold-light);">Projects</em></h1>
+      <p style="color:rgba(253, 253, 253, 0.95);max-width:540px;margin:0 auto;font-size:15px;">150+ sacred structures
+        across Pakistan — each a testament to faith, craftsmanship, and architectural mastery.</p>
+    </div>
+  </div>
+
+  <!-- PROJECTS GRID -->
+  <section style="background:var(--cream);padding:3.5rem 2rem;">
+    <div class="si">
+      <div class="ftabs" id="ftabs">
+        <button class="ftab active" onclick="filterP('all',this)">All Projects</button>
+        <button class="ftab" onclick="filterP('mosque',this)">Mosques</button>
+        <button class="ftab" onclick="filterP('minar',this)">Minars</button>
+        <button class="ftab" onclick="filterP('dome',this)">Domes</button>
+        <button class="ftab" onclick="filterP('madarsa',this)">Madarsas</button>
+        <button class="ftab" onclick="filterP('restoration',this)">Restoration</button>
+      </div>
+      <div class="ppg" id="ppg"></div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+{% endblock %}

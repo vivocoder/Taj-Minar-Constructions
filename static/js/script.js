@@ -3,27 +3,27 @@ document.addEventListener("DOMContentLoaded", function () {
     /* ================== IMAGE DATA ================== */
     const PD = {
         mosque: [
-            'assets/images/masjid 1.jpeg',
-            'assets/images/masjid 2.jpeg',
-            'assets/images/masjid 3.jpeg'
+            'static/images/masjid 1.jpeg',
+            'static/images/masjid 2.jpeg',
+            'static/images/masjid 3.jpeg'
         ],
         minar: [
-            'assets/images/masjid 4.jpeg',
-            'assets/images/masjid 5.jpeg',
-            'assets/images/masjid 6.jpeg'
+            'static/images/masjid 4.jpeg',
+            'static/images/masjid 5.jpeg',
+            'static/images/masjid 6.jpeg'
         ],
         dome: [
-            'assets/images/masjid 7.jpeg',
-            'assets/images/masjid 8.jpeg',
-            'assets/images/masjid 9.jpeg'
+            'static/images/masjid 7.jpeg',
+            'static/images/masjid 8.jpeg',
+            'static/images/masjid 9.jpeg'
         ],
         madarsa: [
-            'assets/images/masjid 10.jpeg',
-            'assets/images/masjid 11.jpeg'
+            'static/images/masjid 10.jpeg',
+            'static/images/masjid 11.jpeg'
         ],
         restoration: [
-            'assets/images/masjid 12.jpeg',
-            'assets/images/masjid 13.jpeg'
+            'static/images/masjid 12.jpeg',
+            'static/images/masjid 13.jpeg'
         ]
     };
 

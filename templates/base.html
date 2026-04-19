@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Taj Minar Constructions — Minar, Dome & Mosque Construction Across India{% endblock %}</title>
+  <!-- ================= PRIMARY SEO ================= -->
+  <meta name="description"
+    content="Taj Minar Constructions offers expert Minar, Dome & Mosque construction services across India since 2005. 150+ completed sacred architecture projects. Call +91 9997868686 for free consultation." />
+  <meta name="keywords"
+    content="minar construction India, dome construction India, mosque construction India, Islamic architecture India, masjid construction services, dome fabrication India, sacred architecture builders" />
+  <meta name="author" content="Taj Minar Constructions" />
+  <meta name="robots" content="index, follow" />
+  <meta name="googlebot" content="index, follow" />
+
+  <!-- ================= CANONICAL ================= -->
+  <link rel="canonical" href="{% block canonical_url %}https://www.tajminar.in/{% endblock %}" />
+
+  <!-- ================= OPEN GRAPH ================= -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Taj Minar Constructions" />
+  <meta property="og:url" content="https://www.tajminar.in/" />
+  <meta property="og:title" content="Taj Minar Constructions — Minar, Dome & Mosque Experts in India" />
+  <meta property="og:description"
+    content="Professional Minar, Dome & Mosque construction services across India. 150+ completed projects with trusted craftsmanship since 2005." />
+  <meta property="og:image" content="{{ url_for('static', filename='images/masjidlogo.jpg', _external=True) }}" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- ================= TWITTER ================= -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://www.tajminar.in/" />
+  <meta name="twitter:title" content="Taj Minar Constructions — Minar & Dome Builders India" />
+  <meta name="twitter:description"
+    content="Trusted experts in Minar, Dome & Mosque construction across India. 150+ successful projects since 2005." />
+  <meta name="twitter:image" content="{{ url_for('static', filename='images/logo.png', _external=True) }}" />
+
+  <!-- ================= INSTAGRAM ================= -->
+  <link rel="me" href="https://www.instagram.com/masjid_ki_minar/" />
+
+  <!-- ================= FAVICON ================= -->
+  <link rel="icon" href="{{ url_for('static', filename='images/masjidlogo.png') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/masjidlogo.png') }}">
+
+  <!-- ================= FONTS & CSS ================= -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+  <!-- Mobile Menu -->
+  {% include 'partials/navbar.html' %}
+
+  <!-- Main Content -->
+  {% block content %}{% endblock %}
+
+  <!-- Footer -->
+  {% include 'partials/footer.html' %}
+
+
+  <!-- WhatsApp Float -->
+  <a href="https://api.whatsapp.com/send/?phone=919997868686&text=Assalamu+Alaikum%21+I+am+interested+in+your+construction+services.&type=phone_number&app_absent=0"
+    target="_blank" class="wa-float">
+    <i class="ri-whatsapp-line" style="font-size: 2rem;"></i>
+  </a>
+
+  <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  {% block extra_js %}{% endblock %}
+</body>
+
+</html>
